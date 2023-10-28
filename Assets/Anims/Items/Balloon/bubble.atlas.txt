@@ -1,0 +1,62 @@
+
+bubble.png
+size: 380,488
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+core1
+  rotate: false
+  xy: 252, 15
+  size: 21, 19
+  orig: 23, 21
+  offset: 1, 1
+  index: -1
+core2
+  rotate: false
+  xy: 226, 12
+  size: 24, 22
+  orig: 26, 24
+  offset: 1, 1
+  index: -1
+core3
+  rotate: false
+  xy: 190, 2
+  size: 34, 32
+  orig: 36, 34
+  offset: 1, 1
+  index: -1
+impact
+  rotate: true
+  xy: 2, 202
+  size: 282, 224
+  orig: 306, 242
+  offset: 0, 18
+  index: -1
+impact_rear
+  rotate: false
+  xy: 228, 221
+  size: 147, 115
+  orig: 148, 118
+  offset: 1, 1
+  index: -1
+outer
+  rotate: false
+  xy: 190, 36
+  size: 164, 164
+  orig: 164, 164
+  offset: 0, 0
+  index: -1
+outer_fade
+  rotate: false
+  xy: 2, 16
+  size: 186, 184
+  orig: 186, 184
+  offset: 0, 0
+  index: -1
+shade
+  rotate: true
+  xy: 228, 338
+  size: 146, 144
+  orig: 148, 146
+  offset: 1, 1
+  index: -1

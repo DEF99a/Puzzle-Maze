@@ -1,0 +1,125 @@
+
+Enemy_06.png
+size: 1300,524
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body f
+  rotate: true
+  xy: 300, 69
+  size: 222, 240
+  orig: 224, 242
+  offset: 1, 1
+  index: -1
+body s
+  rotate: false
+  xy: 929, 10
+  size: 288, 202
+  orig: 291, 204
+  offset: 2, 1
+  index: -1
+ear f
+  rotate: true
+  xy: 718, 25
+  size: 149, 182
+  orig: 149, 183
+  offset: 0, 0
+  index: -1
+ear r
+  rotate: true
+  xy: 2, 133
+  size: 149, 192
+  orig: 151, 195
+  offset: 1, 1
+  index: -1
+eball
+  rotate: false
+  xy: 196, 147
+  size: 100, 135
+  orig: 102, 137
+  offset: 1, 1
+  index: -1
+eye
+  rotate: true
+  xy: 1219, 2
+  size: 22, 41
+  orig: 25, 44
+  offset: 2, 1
+  index: -1
+foot
+  rotate: true
+  xy: 1219, 127
+  size: 85, 50
+  orig: 87, 52
+  offset: 1, 1
+  index: -1
+hand
+  rotate: false
+  xy: 929, 222
+  size: 125, 153
+  orig: 126, 154
+  offset: 0, 1
+  index: -1
+head f
+  rotate: false
+  xy: 300, 293
+  size: 306, 227
+  orig: 308, 229
+  offset: 1, 1
+  index: -1
+head r
+  rotate: true
+  xy: 1068, 214
+  size: 306, 227
+  orig: 308, 229
+  offset: 1, 1
+  index: -1
+head s
+  rotate: false
+  xy: 2, 284
+  size: 296, 236
+  orig: 299, 239
+  offset: 1, 1
+  index: -1
+leg r
+  rotate: false
+  xy: 196, 17
+  size: 98, 128
+  orig: 100, 130
+  offset: 1, 1
+  index: -1
+leg s
+  rotate: true
+  xy: 2, 20
+  size: 111, 186
+  orig: 111, 186
+  offset: 0, 0
+  index: -1
+mouht f
+  rotate: false
+  xy: 608, 377
+  size: 458, 143
+  orig: 460, 145
+  offset: 1, 1
+  index: -1
+mouth s
+  rotate: false
+  xy: 608, 176
+  size: 319, 199
+  orig: 322, 201
+  offset: 2, 1
+  index: -1
+sd
+  rotate: true
+  xy: 1219, 26
+  size: 99, 35
+  orig: 99, 35
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 542, 19
+  size: 155, 174
+  orig: 156, 175
+  offset: 1, 1
+  index: -1

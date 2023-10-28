@@ -1,0 +1,55 @@
+
+Invisible.png
+size: 324,96
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 26 copy
+  rotate: true
+  xy: 2, 13
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+Layer 29
+  rotate: false
+  xy: 262, 48
+  size: 58, 45
+  orig: 58, 45
+  offset: 0, 0
+  index: -1
+bubble
+  rotate: false
+  xy: 299, 11
+  size: 12, 12
+  orig: 270, 270
+  offset: 122, 163
+  index: -1
+cap
+  rotate: false
+  xy: 299, 25
+  size: 23, 21
+  orig: 23, 21
+  offset: 0, 0
+  index: -1
+icon
+  rotate: true
+  xy: 262, 6
+  size: 40, 35
+  orig: 40, 35
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 181, 2
+  size: 79, 91
+  orig: 80, 91
+  offset: 1, 0
+  index: -1
+strode
+  rotate: false
+  xy: 99, 2
+  size: 80, 91
+  orig: 80, 93
+  offset: 0, 0
+  index: -1

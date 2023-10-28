@@ -1,0 +1,34 @@
+
+Enemy_10_action.png
+size: 716,236
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trap
+  rotate: true
+  xy: 551, 3
+  size: 230, 163
+  orig: 232, 165
+  offset: 1, 1
+  index: -1
+trap f
+  rotate: true
+  xy: 2, 2
+  size: 231, 244
+  orig: 233, 246
+  offset: 1, 1
+  index: -1
+trap g2
+  rotate: false
+  xy: 248, 35
+  size: 282, 73
+  orig: 284, 75
+  offset: 1, 1
+  index: -1
+trp g
+  rotate: false
+  xy: 248, 110
+  size: 301, 123
+  orig: 303, 126
+  offset: 1, 2
+  index: -1

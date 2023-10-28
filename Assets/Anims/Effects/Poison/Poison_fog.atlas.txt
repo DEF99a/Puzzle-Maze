@@ -1,0 +1,13 @@
+
+Poison_fog.png
+size: 224,216
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke
+  rotate: false
+  xy: 2, 2
+  size: 219, 211
+  orig: 223, 215
+  offset: 2, 2
+  index: -1

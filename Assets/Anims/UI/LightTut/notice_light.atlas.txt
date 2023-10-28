@@ -1,0 +1,20 @@
+
+notice_light.png
+size: 232,120
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+core
+  rotate: false
+  xy: 121, 11
+  size: 106, 107
+  orig: 108, 109
+  offset: 1, 1
+  index: -1
+outer
+  rotate: true
+  xy: 2, 2
+  size: 116, 117
+  orig: 116, 117
+  offset: 0, 0
+  index: -1

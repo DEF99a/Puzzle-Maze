@@ -1,0 +1,48 @@
+
+Freeze.png
+size: 208,96
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+core1
+  rotate: false
+  xy: 84, 7
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+core2
+  rotate: true
+  xy: 181, 9
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+icon
+  rotate: false
+  xy: 152, 31
+  size: 53, 61
+  orig: 53, 61
+  offset: 0, 0
+  index: -1
+outer
+  rotate: false
+  xy: 84, 17
+  size: 66, 75
+  orig: 66, 75
+  offset: 0, 0
+  index: -1
+particle_20
+  rotate: false
+  xy: 152, 2
+  size: 27, 27
+  orig: 29, 29
+  offset: 1, 1
+  index: -1
+shape
+  rotate: false
+  xy: 2, 3
+  size: 80, 89
+  orig: 80, 89
+  offset: 0, 0
+  index: -1

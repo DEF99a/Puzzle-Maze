@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6261582811567588072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6261582811567588078}
+  - component: {fileID: 6261582811567588073}
+  m_Layer: 0
+  m_Name: PrefabCache
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6261582811567588078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261582811567588072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3160307, y: -0.6967755, z: -29.590645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6261582811567588073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261582811567588072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4215591856fe984e80118dce85029d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTypePrefabs:
+  - enemyType: 0
+    pf: {fileID: 2318799173951296301, guid: 88d253e4b97ec3149b7cc1e056722739, type: 3}
+  - enemyType: 1
+    pf: {fileID: 2318799173951296301, guid: 7cb3452a91aa73849b7100f988e67155, type: 3}
+  - enemyType: 2
+    pf: {fileID: 2318799173951296301, guid: 89b01ac0d82fcd84087a48ace5423a9a, type: 3}
+  - enemyType: 3
+    pf: {fileID: 2318799173951296301, guid: 808feb6116403f342974152ab2e8c0d0, type: 3}
+  - enemyType: 4
+    pf: {fileID: 2318799173951296301, guid: eb7a3ee5cf3b8cc4ca043106d00796c5, type: 3}
+  - enemyType: 5
+    pf: {fileID: 2318799173951296301, guid: 1ed5647e1de6fef4d8f9568376f563ce, type: 3}
+  - enemyType: 6
+    pf: {fileID: 2318799173951296301, guid: 2db10c6f09e46c7499496787aa04ced1, type: 3}
+  - enemyType: 8
+    pf: {fileID: 3761841279738627614, guid: 70a97b2b063236f4a9be76333a7cf065, type: 3}
+  - enemyType: 9
+    pf: {fileID: 8107053216327677719, guid: a78988f2ce30ef4458c0a517fbb67545, type: 3}
+  - enemyType: 7
+    pf: {fileID: 6526604573570116132, guid: 139c1ccac6dc7334ebb027eb86befca1, type: 3}
+  - enemyType: 10
+    pf: {fileID: 6526604573570116132, guid: b9677f3f26e1dda439895ae28a4181f9, type: 3}
+  - enemyType: 254
+    pf: {fileID: 5582594260958499116, guid: 9b49c9ee69ca05b4daf85023b6432dfb, type: 3}
+  playerTypePrefabs:
+  - enemyType: 1
+    pf: {fileID: 9059324072775096776, guid: f37ec939d6957fa40b8d6d43cb52dc99, type: 3}
+  - enemyType: 2
+    pf: {fileID: 7200476519298037066, guid: dfaf88ecbd9d22b4185c33ec9f2db31c, type: 3}
+  - enemyType: 3
+    pf: {fileID: 6185533471139618256, guid: a166e3e87bb142b4a8840b306bc74f9f, type: 3}
+  - enemyType: 4
+    pf: {fileID: 3368247470667059702, guid: 246f39ce8a38393418043ba4b80ea402, type: 3}
+  - enemyType: 5
+    pf: {fileID: 5030333310320390433, guid: bb5e066512572bd4c8a825326879c356, type: 3}
+  - enemyType: 6
+    pf: {fileID: 7367633970712730088, guid: a212fc57c96defb4c815bc0370076f17, type: 3}
+  playerTypePrefabsIOS:
+  - enemyType: 1
+    pf: {fileID: 9059324072775096776, guid: f37ec939d6957fa40b8d6d43cb52dc99, type: 3}
+  - enemyType: 2
+    pf: {fileID: 7200476519298037066, guid: dfaf88ecbd9d22b4185c33ec9f2db31c, type: 3}
+  - enemyType: 3
+    pf: {fileID: 6185533471139618256, guid: a166e3e87bb142b4a8840b306bc74f9f, type: 3}
+  - enemyType: 4
+    pf: {fileID: 3368247470667059702, guid: 246f39ce8a38393418043ba4b80ea402, type: 3}
+  - enemyType: 5
+    pf: {fileID: 5030333310320390433, guid: bb5e066512572bd4c8a825326879c356, type: 3}
+  - enemyType: 6
+    pf: {fileID: 7367633970712730088, guid: a212fc57c96defb4c815bc0370076f17, type: 3}
+  boxPf: {fileID: 8236537054387793175, guid: ac19ed8fba6ef7e4787ed0ec7eba3793, type: 3}
+  bombBoxPf: {fileID: 443710390614705323, guid: e3eb32ae11519ad468625ef6a3832a51, type: 3}
+  giftBoxPf: {fileID: 4296391306659250420, guid: b2bbed6c4edd15f4dadd0cdea28480fe, type: 3}
+  ballBoxPf: {fileID: 4267802281492080479, guid: d66e2287bf8255e40829b51f70f1f28a, type: 3}
+  stonePf: {fileID: 4063060219978516556, guid: c35aa73ec8dd9714889f26ac1d0bdfee, type: 3}
+  balloonPf: {fileID: 8435959259690757369, guid: d4299e1e1ccf23048ad909fe056d92aa, type: 3}
+  itemSpritePf: {fileID: 6608613421493068355, guid: 4d0815cc757682440b120a40e1da0476, type: 3}
+  iceEffectPf: {fileID: 1452873481301313975, guid: 9c21678529894494cbd7399373b6582f, type: 3}
+  itemOnmapPf: {fileID: 5270736479181866675, guid: f7d118e1d51e90d4d9706c696e2f6557, type: 3}
+  boxKeyPf: {fileID: 8236537054387793175, guid: f01acd6d6f0ede2419bfd5a46c709cc4, type: 3}
+  boxKey1Pf: {fileID: 8236537054387793175, guid: 21144a9f2c5e60b4cb03d0192524f057, type: 3}
+  groundKeyPf: {fileID: 8236537054387793175, guid: 6af6f4799abc2d94c8b07c7121f68b6e, type: 3}
+  boxTreePf: {fileID: 8236537054387793175, guid: d1e8918fb6bac374fa67464241027f88, type: 3}
+  boxWaterMelon: {fileID: 8236537054387793175, guid: 4d5cae4b382b8744aa8d7263ca756dae, type: 3}
+  coinFlyUp: {fileID: 1063126359234171528, guid: 6103079a968ce454095c3c5d2b767313, type: 3}
+  poisonPf: {fileID: 1506722706181662807, guid: f461a593d9ba41746a75456e8b77a365, type: 3}

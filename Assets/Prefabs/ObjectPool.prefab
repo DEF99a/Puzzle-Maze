@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1753190429698575680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433761439362456996}
+  - component: {fileID: 8762086923568991132}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433761439362456996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753190429698575680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8762086923568991132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753190429698575680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee69d3693055c459f3ec78d06cf2a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectCates:
+  - name: Box
+    objectAmounts:
+    - pf: {fileID: 4267802281492080479, guid: d66e2287bf8255e40829b51f70f1f28a, type: 3}
+      amount: 10
+    - pf: {fileID: 443710390614705323, guid: e3eb32ae11519ad468625ef6a3832a51, type: 3}
+      amount: 10
+    - pf: {fileID: 7045164290552115457, guid: 051c152433b6f614d91edb2f22de0548, type: 3}
+      amount: 10
+    - pf: {fileID: 8236537054387793175, guid: ac19ed8fba6ef7e4787ed0ec7eba3793, type: 3}
+      amount: 100
+    - pf: {fileID: 4296391306659250420, guid: b2bbed6c4edd15f4dadd0cdea28480fe, type: 3}
+      amount: 10
+    - pf: {fileID: 4063060219978516556, guid: c35aa73ec8dd9714889f26ac1d0bdfee, type: 3}
+      amount: 50
+  - name: Bullet
+    objectAmounts:
+    - pf: {fileID: 3063069265626471985, guid: aec148d40dc22b744b944231a5c29bf9, type: 3}
+      amount: 10
+    - pf: {fileID: 6239969598469604774, guid: a0f5413918bce4141abaaa97cd22ae16, type: 3}
+      amount: 10
+    - pf: {fileID: 4934058377085806169, guid: 88a9f8b92dabcfe48aa8e02998efde32, type: 3}
+      amount: 10
+    - pf: {fileID: 229818049842114188, guid: aa51fd94687db9f40bc0ad69353d6613, type: 3}
+      amount: 10
+  - name: Effect
+    objectAmounts:
+    - pf: {fileID: 1452873481301313975, guid: 9c21678529894494cbd7399373b6582f, type: 3}
+      amount: 10
+    - pf: {fileID: 6629731224530904626, guid: c0172dd639568c74f86080955ca7b0af, type: 3}
+      amount: 10
+    - pf: {fileID: 3217214944885793919, guid: c9d6c255a0c5742459532af73ba215c9, type: 3}
+      amount: 10
+  - name: Enemy
+    objectAmounts:
+    - pf: {fileID: 6526604573570116132, guid: b9677f3f26e1dda439895ae28a4181f9, type: 3}
+      amount: 10
+    - pf: {fileID: 2318799173951296301, guid: eb7a3ee5cf3b8cc4ca043106d00796c5, type: 3}
+      amount: 10
+    - pf: {fileID: 8107053216327677719, guid: a78988f2ce30ef4458c0a517fbb67545, type: 3}
+      amount: 10
+    - pf: {fileID: 2318799173951296301, guid: 88d253e4b97ec3149b7cc1e056722739, type: 3}
+      amount: 10
+    - pf: {fileID: 2318799173951296301, guid: 808feb6116403f342974152ab2e8c0d0, type: 3}
+      amount: 10
+    - pf: {fileID: 2318799173951296301, guid: 89b01ac0d82fcd84087a48ace5423a9a, type: 3}
+      amount: 10
+    - pf: {fileID: 2318799173951296301, guid: 7cb3452a91aa73849b7100f988e67155, type: 3}
+      amount: 10
+    - pf: {fileID: 2318799173951296301, guid: 2db10c6f09e46c7499496787aa04ced1, type: 3}
+      amount: 10
+    - pf: {fileID: 2318799173951296301, guid: 1ed5647e1de6fef4d8f9568376f563ce, type: 3}
+      amount: 10
+    - pf: {fileID: 5582594260958499116, guid: 9b49c9ee69ca05b4daf85023b6432dfb, type: 3}
+      amount: 10
+    - pf: {fileID: 3761841279738627614, guid: 70a97b2b063236f4a9be76333a7cf065, type: 3}
+      amount: 10
+    - pf: {fileID: 6526604573570116132, guid: 139c1ccac6dc7334ebb027eb86befca1, type: 3}
+      amount: 10
+  - name: Item
+    objectAmounts:
+    - pf: {fileID: 8435959259690757369, guid: d4299e1e1ccf23048ad909fe056d92aa, type: 3}
+      amount: 2
+    - pf: {fileID: 6947293134007557365, guid: e22b2daa5b8218a409181c7d0720f373, type: 3}
+      amount: 10
+    - pf: {fileID: 6947293134007557365, guid: fc69f0c1abadc304d9cf2835f1d1c1da, type: 3}
+      amount: 10
+    - pf: {fileID: 4595720037279015223, guid: f636782041ff3c24f824213a6515016c, type: 3}
+      amount: 10
+    - pf: {fileID: 5270736479181866675, guid: f7d118e1d51e90d4d9706c696e2f6557, type: 3}
+      amount: 10
+    - pf: {fileID: 6608613421493068355, guid: 4d0815cc757682440b120a40e1da0476, type: 3}
+      amount: 10
+    - pf: {fileID: 2527476409486991256, guid: e92780e49f3cf734ca700c0a06ed8a85, type: 3}
+      amount: 10
+    - pf: {fileID: 3063069265626471985, guid: 457592345e01323459c8e893af20413a, type: 3}
+      amount: 10
+  - name: ItemView
+    objectAmounts:
+    - pf: {fileID: 6451432466204322712, guid: 177de12a62f436d46b3933f9338e9925, type: 3}
+      amount: 10
+    - pf: {fileID: 162558295156251042, guid: d7cc8386fb77215489d22953153172b3, type: 3}
+      amount: 10
+    - pf: {fileID: 6153532155099268997, guid: 4239a13c04b13c9419f4f2a6814693bc, type: 3}
+      amount: 25
+  - name: Player
+    objectAmounts:
+    - pf: {fileID: 7200476519298037066, guid: 14d3347ba334e2e418bce3754f107f49, type: 3}
+      amount: 1
+    - pf: {fileID: 5030333310320390433, guid: 8a7c984c7f2053e41b9e6c4cc7fcd216, type: 3}
+      amount: 1
+    - pf: {fileID: 5030333310320390433, guid: bb5e066512572bd4c8a825326879c356, type: 3}
+      amount: 1
+    - pf: {fileID: 7200476519298037066, guid: f45cbaa879d901646a58572e95845508, type: 3}
+      amount: 1
+    - pf: {fileID: 7200476519298037066, guid: dfaf88ecbd9d22b4185c33ec9f2db31c, type: 3}
+      amount: 1

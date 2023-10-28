@@ -1,0 +1,146 @@
+
+Main_03.png
+size: 1940,740
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+angry_mask
+  rotate: true
+  xy: 1634, 351
+  size: 201, 202
+  orig: 201, 203
+  offset: 0, 1
+  index: -1
+arm
+  rotate: false
+  xy: 1801, 38
+  size: 126, 157
+  orig: 126, 157
+  offset: 0, 0
+  index: -1
+ball
+  rotate: false
+  xy: 1634, 184
+  size: 165, 165
+  orig: 166, 166
+  offset: 1, 1
+  index: -1
+body
+  rotate: false
+  xy: 694, 50
+  size: 226, 231
+  orig: 226, 231
+  offset: 0, 0
+  index: -1
+body r
+  rotate: false
+  xy: 1150, 50
+  size: 226, 231
+  orig: 226, 231
+  offset: 0, 0
+  index: -1
+body s
+  rotate: false
+  xy: 466, 26
+  size: 226, 231
+  orig: 226, 231
+  offset: 0, 0
+  index: -1
+body_30
+  rotate: false
+  xy: 922, 50
+  size: 226, 231
+  orig: 226, 231
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 795, 15
+  size: 33, 123
+  orig: 36, 127
+  offset: 1, 2
+  index: -1
+eye_angry
+  rotate: false
+  xy: 1563, 26
+  size: 145, 156
+  orig: 145, 156
+  offset: 0, 0
+  index: -1
+f_face
+  rotate: true
+  xy: 1378, 2
+  size: 318, 183
+  orig: 318, 183
+  offset: 0, 0
+  index: -1
+foot
+  rotate: true
+  xy: 1849, 583
+  size: 154, 89
+  orig: 154, 89
+  offset: 0, 0
+  index: -1
+foot_30
+  rotate: false
+  xy: 1801, 197
+  size: 134, 152
+  orig: 134, 152
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 346, 259
+  size: 478, 215
+  orig: 478, 215
+  offset: 0, 0
+  index: -1
+hat r
+  rotate: true
+  xy: 2, 259
+  size: 478, 342
+  orig: 478, 343
+  offset: 0, 1
+  index: -1
+hat s
+  rotate: false
+  xy: 2, 9
+  size: 462, 248
+  orig: 462, 248
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 563, 283
+  size: 454, 355
+  orig: 454, 355
+  offset: 0, 0
+  index: -1
+head r
+  rotate: true
+  xy: 920, 283
+  size: 454, 355
+  orig: 454, 355
+  offset: 0, 0
+  index: -1
+head s
+  rotate: true
+  xy: 1277, 322
+  size: 415, 355
+  orig: 416, 355
+  offset: 0, 0
+  index: -1
+s_face
+  rotate: false
+  xy: 1634, 554
+  size: 213, 183
+  orig: 213, 183
+  offset: 0, 0
+  index: -1
+sd
+  rotate: false
+  xy: 694, 13
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1

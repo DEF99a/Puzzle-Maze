@@ -1,0 +1,146 @@
+
+Enemy_03.png
+size: 996,388
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ellipse 1
+  rotate: false
+  xy: 359, 66
+  size: 219, 107
+  orig: 219, 107
+  offset: 0, 0
+  index: -1
+bot_s
+  rotate: false
+  xy: 580, 277
+  size: 244, 109
+  orig: 244, 109
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 894, 2
+  size: 33, 32
+  orig: 35, 35
+  offset: 1, 2
+  index: -1
+eye ball
+  rotate: false
+  xy: 712, 74
+  size: 96, 101
+  orig: 98, 103
+  offset: 1, 1
+  index: -1
+h1
+  rotate: false
+  xy: 359, 3
+  size: 114, 61
+  orig: 116, 64
+  offset: 1, 1
+  index: -1
+h10
+  rotate: false
+  xy: 802, 178
+  size: 65, 97
+  orig: 68, 100
+  offset: 1, 2
+  index: -1
+h11
+  rotate: false
+  xy: 475, 4
+  size: 98, 60
+  orig: 102, 62
+  offset: 2, 1
+  index: -1
+h2
+  rotate: true
+  xy: 684, 7
+  size: 65, 97
+  orig: 68, 100
+  offset: 1, 2
+  index: -1
+h3
+  rotate: true
+  xy: 896, 113
+  size: 82, 74
+  orig: 84, 78
+  offset: 1, 2
+  index: -1
+h4
+  rotate: false
+  xy: 869, 197
+  size: 84, 89
+  orig: 86, 91
+  offset: 1, 1
+  index: -1
+h5
+  rotate: false
+  xy: 896, 37
+  size: 82, 74
+  orig: 84, 78
+  offset: 1, 2
+  index: -1
+h6
+  rotate: false
+  xy: 810, 2
+  size: 82, 83
+  orig: 84, 87
+  offset: 1, 2
+  index: -1
+h7
+  rotate: false
+  xy: 580, 11
+  size: 102, 83
+  orig: 104, 85
+  offset: 1, 1
+  index: -1
+h8
+  rotate: false
+  xy: 810, 87
+  size: 84, 89
+  orig: 86, 91
+  offset: 1, 1
+  index: -1
+h9
+  rotate: false
+  xy: 580, 96
+  size: 130, 79
+  orig: 132, 82
+  offset: 1, 1
+  index: -1
+m_f
+  rotate: false
+  xy: 580, 177
+  size: 220, 98
+  orig: 225, 115
+  offset: 3, 13
+  index: -1
+m_s
+  rotate: false
+  xy: 826, 288
+  size: 129, 98
+  orig: 132, 115
+  offset: 1, 13
+  index: -1
+sd
+  rotate: true
+  xy: 957, 287
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1
+shape
+  rotate: false
+  xy: 2, 31
+  size: 355, 355
+  orig: 357, 357
+  offset: 1, 1
+  index: -1
+smoke
+  rotate: false
+  xy: 359, 175
+  size: 219, 211
+  orig: 223, 215
+  offset: 2, 2
+  index: -1

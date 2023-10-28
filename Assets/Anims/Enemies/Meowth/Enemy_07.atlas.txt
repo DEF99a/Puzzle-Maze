@@ -1,0 +1,153 @@
+
+Enemy_07.png
+size: 1588,304
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: true
+  xy: 1276, 6
+  size: 126, 62
+  orig: 126, 62
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 929, 126
+  size: 170, 173
+  orig: 172, 175
+  offset: 1, 1
+  index: -1
+coin f
+  rotate: true
+  xy: 883, 8
+  size: 106, 143
+  orig: 108, 145
+  offset: 1, 1
+  index: -1
+coin r
+  rotate: true
+  xy: 1340, 26
+  size: 106, 143
+  orig: 106, 143
+  offset: 0, 0
+  index: -1
+coin s
+  rotate: false
+  xy: 1173, 2
+  size: 101, 128
+  orig: 104, 130
+  offset: 2, 1
+  index: -1
+ear f
+  rotate: false
+  xy: 1247, 134
+  size: 143, 165
+  orig: 146, 167
+  offset: 1, 1
+  index: -1
+ear r
+  rotate: false
+  xy: 1101, 132
+  size: 144, 167
+  orig: 147, 169
+  offset: 1, 1
+  index: -1
+ear s
+  rotate: true
+  xy: 764, 116
+  size: 183, 163
+  orig: 185, 166
+  offset: 1, 2
+  index: -1
+eye
+  rotate: true
+  xy: 386, 3
+  size: 18, 85
+  orig: 20, 87
+  offset: 1, 1
+  index: -1
+eye ball
+  rotate: true
+  xy: 1028, 7
+  size: 117, 143
+  orig: 119, 145
+  offset: 1, 1
+  index: -1
+foot f
+  rotate: false
+  xy: 593, 13
+  size: 129, 76
+  orig: 133, 78
+  offset: 2, 1
+  index: -1
+foot r
+  rotate: false
+  xy: 724, 13
+  size: 129, 76
+  orig: 133, 78
+  offset: 2, 1
+  index: -1
+foot s
+  rotate: true
+  xy: 1392, 153
+  size: 146, 75
+  orig: 148, 77
+  offset: 1, 1
+  index: -1
+hand f
+  rotate: true
+  xy: 1485, 202
+  size: 97, 100
+  orig: 100, 103
+  offset: 2, 1
+  index: -1
+hand r
+  rotate: true
+  xy: 1485, 42
+  size: 97, 100
+  orig: 100, 103
+  offset: 2, 1
+  index: -1
+head f
+  rotate: false
+  xy: 2, 9
+  size: 382, 290
+  orig: 384, 292
+  offset: 1, 1
+  index: -1
+m s
+  rotate: true
+  xy: 1469, 141
+  size: 59, 53
+  orig: 62, 57
+  offset: 2, 2
+  index: -1
+mouth f
+  rotate: true
+  xy: 855, 6
+  size: 108, 26
+  orig: 110, 30
+  offset: 1, 2
+  index: -1
+rau
+  rotate: false
+  xy: 386, 23
+  size: 205, 276
+  orig: 208, 279
+  offset: 2, 2
+  index: -1
+sd
+  rotate: false
+  xy: 1485, 5
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1
+tail
+  rotate: false
+  xy: 593, 91
+  size: 169, 208
+  orig: 169, 208
+  offset: 0, 0
+  index: -1

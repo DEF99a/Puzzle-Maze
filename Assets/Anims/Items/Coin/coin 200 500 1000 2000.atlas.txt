@@ -1,0 +1,48 @@
+
+coin 200 500 1000 2000.png
+size: 588,168
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1000 coin
+  rotate: false
+  xy: 2, 20
+  size: 183, 146
+  orig: 183, 146
+  offset: 0, 0
+  index: -1
+200 coin
+  rotate: false
+  xy: 489, 2
+  size: 93, 71
+  orig: 93, 71
+  offset: 0, 0
+  index: -1
+2000 coin
+  rotate: true
+  xy: 187, 11
+  size: 155, 169
+  orig: 155, 169
+  offset: 0, 0
+  index: -1
+500 coin
+  rotate: true
+  xy: 489, 75
+  size: 91, 95
+  orig: 91, 95
+  offset: 0, 0
+  index: -1
+particle_20
+  rotate: false
+  xy: 358, 3
+  size: 27, 27
+  orig: 29, 29
+  offset: 1, 1
+  index: -1
+ray_spiral
+  rotate: true
+  xy: 358, 32
+  size: 134, 129
+  orig: 136, 131
+  offset: 1, 1
+  index: -1

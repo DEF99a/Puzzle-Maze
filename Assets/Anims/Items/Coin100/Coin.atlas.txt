@@ -1,0 +1,69 @@
+
+Coin.png
+size: 444,72
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Map-coins-c001
+  rotate: false
+  xy: 423, 2
+  size: 19, 65
+  orig: 21, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c002
+  rotate: false
+  xy: 353, 2
+  size: 33, 65
+  orig: 35, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c003
+  rotate: false
+  xy: 255, 2
+  size: 47, 65
+  orig: 49, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c004
+  rotate: false
+  xy: 196, 2
+  size: 57, 65
+  orig: 59, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c005
+  rotate: false
+  xy: 2, 2
+  size: 65, 65
+  orig: 67, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c006
+  rotate: false
+  xy: 69, 2
+  size: 65, 65
+  orig: 67, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c009
+  rotate: false
+  xy: 136, 2
+  size: 58, 65
+  orig: 60, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c010
+  rotate: false
+  xy: 304, 2
+  size: 47, 65
+  orig: 49, 67
+  offset: 1, 1
+  index: -1
+Map-coins-c011
+  rotate: false
+  xy: 388, 2
+  size: 33, 65
+  orig: 35, 67
+  offset: 1, 1
+  index: -1

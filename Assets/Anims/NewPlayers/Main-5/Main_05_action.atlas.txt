@@ -1,0 +1,41 @@
+
+Main_05_action.png
+size: 532,792
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 2, 455
+  size: 334, 505
+  orig: 358, 505
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 2, 229
+  size: 224, 464
+  orig: 224, 465
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 2, 2
+  size: 225, 359
+  orig: 225, 421
+  offset: 0, 0
+  index: -1
+ball
+  rotate: false
+  xy: 363, 42
+  size: 162, 162
+  orig: 163, 163
+  offset: 0, 0
+  index: -1
+knife
+  rotate: false
+  xy: 468, 206
+  size: 61, 247
+  orig: 61, 247
+  offset: 0, 0
+  index: -1

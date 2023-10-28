@@ -1,0 +1,146 @@
+
+Main_03.png
+size: 996,1020
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: false
+  xy: 412, 28
+  size: 121, 134
+  orig: 121, 134
+  offset: 0, 0
+  index: -1
+ball
+  rotate: false
+  xy: 644, 153
+  size: 168, 167
+  orig: 168, 167
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 768, 780
+  size: 236, 225
+  orig: 236, 225
+  offset: 0, 0
+  index: -1
+body r
+  rotate: true
+  xy: 768, 542
+  size: 236, 225
+  orig: 236, 225
+  offset: 0, 0
+  index: -1
+body s
+  rotate: true
+  xy: 692, 322
+  size: 218, 219
+  orig: 219, 220
+  offset: 1, 0
+  index: -1
+body_30
+  rotate: false
+  xy: 406, 164
+  size: 236, 225
+  orig: 236, 225
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 750, 87
+  size: 51, 64
+  orig: 51, 65
+  offset: 0, 1
+  index: -1
+eye die
+  rotate: false
+  xy: 750, 30
+  size: 54, 55
+  orig: 54, 56
+  offset: 0, 0
+  index: -1
+f_face
+  rotate: false
+  xy: 2, 2
+  size: 284, 257
+  orig: 286, 257
+  offset: 1, 0
+  index: -1
+foot
+  rotate: true
+  xy: 535, 26
+  size: 136, 89
+  orig: 136, 89
+  offset: 0, 0
+  index: -1
+foot_30
+  rotate: false
+  xy: 814, 168
+  size: 134, 152
+  orig: 134, 152
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 261
+  size: 402, 368
+  orig: 404, 368
+  offset: 1, 0
+  index: -1
+head r
+  rotate: false
+  xy: 2, 631
+  size: 402, 385
+  orig: 404, 385
+  offset: 1, 0
+  index: -1
+head s
+  rotate: false
+  xy: 406, 650
+  size: 360, 366
+  orig: 360, 366
+  offset: 0, 0
+  index: -1
+s_face
+  rotate: false
+  xy: 406, 391
+  size: 284, 257
+  orig: 286, 257
+  offset: 1, 0
+  index: -1
+sd
+  rotate: true
+  xy: 913, 441
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1
+shell f
+  rotate: false
+  xy: 626, 34
+  size: 122, 117
+  orig: 124, 119
+  offset: 1, 1
+  index: -1
+shell s
+  rotate: false
+  xy: 692, 550
+  size: 70, 98
+  orig: 70, 98
+  offset: 0, 0
+  index: -1
+tail f
+  rotate: false
+  xy: 288, 2
+  size: 122, 101
+  orig: 122, 101
+  offset: 0, 0
+  index: -1
+tail s
+  rotate: true
+  xy: 288, 105
+  size: 154, 91
+  orig: 155, 91
+  offset: 1, 0
+  index: -1

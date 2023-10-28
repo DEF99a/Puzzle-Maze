@@ -1,0 +1,125 @@
+
+Enemy_02.png
+size: 1892,420
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eball_f
+  rotate: true
+  xy: 842, 10
+  size: 108, 132
+  orig: 110, 135
+  offset: 1, 2
+  index: -1
+eball_s
+  rotate: true
+  xy: 1244, 38
+  size: 80, 123
+  orig: 82, 125
+  offset: 1, 1
+  index: -1
+eye
+  rotate: true
+  xy: 1244, 2
+  size: 34, 58
+  orig: 37, 60
+  offset: 2, 1
+  index: -1
+fleg_s
+  rotate: true
+  xy: 1549, 4
+  size: 137, 166
+  orig: 139, 169
+  offset: 1, 1
+  index: -1
+head_f
+  rotate: true
+  xy: 842, 120
+  size: 298, 253
+  orig: 300, 255
+  offset: 1, 1
+  index: -1
+head_r
+  rotate: true
+  xy: 1097, 120
+  size: 298, 253
+  orig: 300, 255
+  offset: 1, 1
+  index: -1
+head_s
+  rotate: false
+  xy: 1352, 143
+  size: 232, 275
+  orig: 234, 278
+  offset: 1, 1
+  index: -1
+leg_f
+  rotate: true
+  xy: 1369, 4
+  size: 137, 178
+  orig: 139, 180
+  offset: 1, 1
+  index: -1
+neck
+  rotate: false
+  xy: 1586, 246
+  size: 122, 172
+  orig: 124, 175
+  offset: 1, 1
+  index: -1
+nose_f
+  rotate: true
+  xy: 1717, 226
+  size: 192, 172
+  orig: 196, 174
+  offset: 2, 1
+  index: -1
+nose_s
+  rotate: true
+  xy: 1717, 46
+  size: 178, 172
+  orig: 181, 174
+  offset: 2, 1
+  index: -1
+sd
+  rotate: false
+  xy: 1717, 9
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1
+shell_f
+  rotate: true
+  xy: 574, 10
+  size: 408, 266
+  orig: 410, 268
+  offset: 1, 1
+  index: -1
+shell_r
+  rotate: true
+  xy: 289, 10
+  size: 408, 283
+  orig: 410, 286
+  offset: 1, 2
+  index: -1
+shell_s
+  rotate: true
+  xy: 2, 10
+  size: 408, 285
+  orig: 410, 287
+  offset: 1, 1
+  index: -1
+tail_r
+  rotate: true
+  xy: 1114, 32
+  size: 86, 128
+  orig: 88, 130
+  offset: 1, 1
+  index: -1
+tail_s
+  rotate: false
+  xy: 976, 18
+  size: 136, 100
+  orig: 138, 102
+  offset: 1, 1
+  index: -1

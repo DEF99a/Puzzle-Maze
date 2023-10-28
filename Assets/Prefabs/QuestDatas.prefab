@@ -1,0 +1,613 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1661406184803945919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661406184803945917}
+  - component: {fileID: 1661406184803945916}
+  m_Layer: 0
+  m_Name: QuestDatas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1661406184803945917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661406184803945919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3640857, y: -1.6182001, z: 51.68171}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661406184803945916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661406184803945919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940bdfca2e1ee804593bb8ab81782867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questKills:
+  - questType: 0
+    requestAmount: 2
+    coinReward: 50
+    myComplete: 0
+    canRev: 0
+    enemyType: 0
+  - questType: 0
+    requestAmount: 5
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    enemyType: 0
+  - questType: 0
+    requestAmount: 8
+    coinReward: 150
+    myComplete: 0
+    canRev: 0
+    enemyType: 0
+  - questType: 0
+    requestAmount: 10
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    enemyType: 0
+  - questType: 0
+    requestAmount: 15
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    enemyType: 0
+  - questType: 0
+    requestAmount: 2
+    coinReward: 60
+    myComplete: 0
+    canRev: 0
+    enemyType: 1
+  - questType: 0
+    requestAmount: 5
+    coinReward: 120
+    myComplete: 0
+    canRev: 0
+    enemyType: 1
+  - questType: 0
+    requestAmount: 8
+    coinReward: 180
+    myComplete: 0
+    canRev: 0
+    enemyType: 1
+  - questType: 0
+    requestAmount: 10
+    coinReward: 240
+    myComplete: 0
+    canRev: 0
+    enemyType: 1
+  - questType: 0
+    requestAmount: 15
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    enemyType: 1
+  - questType: 0
+    requestAmount: 2
+    coinReward: 80
+    myComplete: 0
+    canRev: 0
+    enemyType: 2
+  - questType: 0
+    requestAmount: 4
+    coinReward: 160
+    myComplete: 0
+    canRev: 0
+    enemyType: 2
+  - questType: 0
+    requestAmount: 6
+    coinReward: 240
+    myComplete: 0
+    canRev: 0
+    enemyType: 2
+  - questType: 0
+    requestAmount: 8
+    coinReward: 320
+    myComplete: 0
+    canRev: 0
+    enemyType: 2
+  - questType: 0
+    requestAmount: 10
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    enemyType: 2
+  - questType: 0
+    requestAmount: 1
+    coinReward: 50
+    myComplete: 0
+    canRev: 0
+    enemyType: 4
+  - questType: 0
+    requestAmount: 2
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    enemyType: 4
+  - questType: 0
+    requestAmount: 4
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    enemyType: 4
+  - questType: 0
+    requestAmount: 6
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    enemyType: 4
+  - questType: 0
+    requestAmount: 8
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    enemyType: 4
+  - questType: 0
+    requestAmount: 1
+    coinReward: 50
+    myComplete: 0
+    canRev: 0
+    enemyType: 5
+  - questType: 0
+    requestAmount: 2
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    enemyType: 5
+  - questType: 0
+    requestAmount: 4
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    enemyType: 5
+  - questType: 0
+    requestAmount: 6
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    enemyType: 5
+  - questType: 0
+    requestAmount: 8
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    enemyType: 5
+  - questType: 0
+    requestAmount: 1
+    coinReward: 60
+    myComplete: 0
+    canRev: 0
+    enemyType: 6
+  - questType: 0
+    requestAmount: 2
+    coinReward: 120
+    myComplete: 0
+    canRev: 0
+    enemyType: 6
+  - questType: 0
+    requestAmount: 4
+    coinReward: 240
+    myComplete: 0
+    canRev: 0
+    enemyType: 6
+  - questType: 0
+    requestAmount: 6
+    coinReward: 360
+    myComplete: 0
+    canRev: 0
+    enemyType: 6
+  - questType: 0
+    requestAmount: 8
+    coinReward: 480
+    myComplete: 0
+    canRev: 0
+    enemyType: 6
+  - questType: 0
+    requestAmount: 1
+    coinReward: 60
+    myComplete: 0
+    canRev: 0
+    enemyType: 7
+  - questType: 0
+    requestAmount: 2
+    coinReward: 120
+    myComplete: 0
+    canRev: 0
+    enemyType: 7
+  - questType: 0
+    requestAmount: 4
+    coinReward: 240
+    myComplete: 0
+    canRev: 0
+    enemyType: 7
+  - questType: 0
+    requestAmount: 6
+    coinReward: 360
+    myComplete: 0
+    canRev: 0
+    enemyType: 7
+  - questType: 0
+    requestAmount: 8
+    coinReward: 480
+    myComplete: 0
+    canRev: 0
+    enemyType: 7
+  - questType: 0
+    requestAmount: 1
+    coinReward: 50
+    myComplete: 0
+    canRev: 0
+    enemyType: 8
+  - questType: 0
+    requestAmount: 2
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    enemyType: 8
+  - questType: 0
+    requestAmount: 4
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    enemyType: 8
+  - questType: 0
+    requestAmount: 6
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    enemyType: 8
+  - questType: 0
+    requestAmount: 8
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    enemyType: 8
+  - questType: 0
+    requestAmount: 1
+    coinReward: 50
+    myComplete: 0
+    canRev: 0
+    enemyType: 9
+  - questType: 0
+    requestAmount: 2
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    enemyType: 9
+  - questType: 0
+    requestAmount: 4
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    enemyType: 9
+  - questType: 0
+    requestAmount: 6
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    enemyType: 9
+  - questType: 0
+    requestAmount: 8
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    enemyType: 9
+  - questType: 0
+    requestAmount: 1
+    coinReward: 60
+    myComplete: 0
+    canRev: 0
+    enemyType: 10
+  - questType: 0
+    requestAmount: 2
+    coinReward: 120
+    myComplete: 0
+    canRev: 0
+    enemyType: 10
+  - questType: 0
+    requestAmount: 4
+    coinReward: 240
+    myComplete: 0
+    canRev: 0
+    enemyType: 10
+  - questType: 0
+    requestAmount: 6
+    coinReward: 360
+    myComplete: 0
+    canRev: 0
+    enemyType: 10
+  - questType: 0
+    requestAmount: 8
+    coinReward: 480
+    myComplete: 0
+    canRev: 0
+    enemyType: 10
+  - questType: 0
+    requestAmount: 1
+    coinReward: 70
+    myComplete: 0
+    canRev: 0
+    enemyType: 3
+  - questType: 0
+    requestAmount: 2
+    coinReward: 140
+    myComplete: 0
+    canRev: 0
+    enemyType: 3
+  - questType: 0
+    requestAmount: 4
+    coinReward: 280
+    myComplete: 0
+    canRev: 0
+    enemyType: 3
+  - questType: 0
+    requestAmount: 6
+    coinReward: 420
+    myComplete: 0
+    canRev: 0
+    enemyType: 3
+  - questType: 0
+    requestAmount: 8
+    coinReward: 560
+    myComplete: 0
+    canRev: 0
+    enemyType: 3
+  questUseItems:
+  - questType: 4
+    requestAmount: 1
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    entityType: 23
+  - questType: 4
+    requestAmount: 2
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    entityType: 23
+  - questType: 4
+    requestAmount: 3
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    entityType: 23
+  - questType: 4
+    requestAmount: 4
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    entityType: 23
+  - questType: 4
+    requestAmount: 5
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+    entityType: 23
+  - questType: 4
+    requestAmount: 1
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    entityType: 38
+  - questType: 4
+    requestAmount: 2
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    entityType: 38
+  - questType: 4
+    requestAmount: 3
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    entityType: 38
+  - questType: 4
+    requestAmount: 4
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    entityType: 38
+  - questType: 4
+    requestAmount: 5
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+    entityType: 38
+  - questType: 4
+    requestAmount: 1
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    entityType: 34
+  - questType: 4
+    requestAmount: 2
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    entityType: 34
+  - questType: 4
+    requestAmount: 3
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    entityType: 34
+  - questType: 4
+    requestAmount: 4
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    entityType: 34
+  - questType: 4
+    requestAmount: 5
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+    entityType: 34
+  - questType: 4
+    requestAmount: 1
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    entityType: 22
+  - questType: 4
+    requestAmount: 2
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    entityType: 22
+  - questType: 4
+    requestAmount: 3
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    entityType: 22
+  - questType: 4
+    requestAmount: 4
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    entityType: 22
+  - questType: 4
+    requestAmount: 5
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+    entityType: 22
+  - questType: 4
+    requestAmount: 1
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+    entityType: 20
+  - questType: 4
+    requestAmount: 2
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+    entityType: 20
+  - questType: 4
+    requestAmount: 3
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+    entityType: 20
+  - questType: 4
+    requestAmount: 4
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+    entityType: 20
+  - questType: 4
+    requestAmount: 5
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+    entityType: 20
+  questModels:
+  - questType: 1
+    requestAmount: 1
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+  - questType: 2
+    requestAmount: 1
+    coinReward: 50
+    myComplete: 0
+    canRev: 0
+  - questType: 2
+    requestAmount: 2
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+  - questType: 2
+    requestAmount: 3
+    coinReward: 150
+    myComplete: 0
+    canRev: 0
+  - questType: 2
+    requestAmount: 4
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+  - questType: 2
+    requestAmount: 6
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+  - questType: 5
+    requestAmount: 1
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+  - questType: 6
+    requestAmount: 500
+    coinReward: 100
+    myComplete: 0
+    canRev: 0
+  - questType: 6
+    requestAmount: 1000
+    coinReward: 200
+    myComplete: 0
+    canRev: 0
+  - questType: 6
+    requestAmount: 1500
+    coinReward: 300
+    myComplete: 0
+    canRev: 0
+  - questType: 6
+    requestAmount: 2000
+    coinReward: 400
+    myComplete: 0
+    canRev: 0
+  - questType: 6
+    requestAmount: 2500
+    coinReward: 500
+    myComplete: 0
+    canRev: 0
+  - questType: 3
+    requestAmount: 1
+    coinReward: 80
+    myComplete: 0
+    canRev: 0
+  - questType: 3
+    requestAmount: 2
+    coinReward: 160
+    myComplete: 0
+    canRev: 0
+  - questType: 3
+    requestAmount: 3
+    coinReward: 240
+    myComplete: 0
+    canRev: 0
+  - questType: 3
+    requestAmount: 4
+    coinReward: 320
+    myComplete: 0
+    canRev: 0
+  - questType: 3
+    requestAmount: 6
+    coinReward: 400
+    myComplete: 0
+    canRev: 0

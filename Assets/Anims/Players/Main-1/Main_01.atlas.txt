@@ -1,0 +1,111 @@
+
+Main_01.png
+size: 968,592
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+angry_mask
+  rotate: false
+  xy: 458, 140
+  size: 201, 202
+  orig: 201, 203
+  offset: 0, 1
+  index: -1
+arm
+  rotate: false
+  xy: 825, 186
+  size: 126, 157
+  orig: 128, 159
+  offset: 1, 1
+  index: -1
+ball
+  rotate: false
+  xy: 661, 180
+  size: 162, 162
+  orig: 164, 164
+  offset: 1, 1
+  index: -1
+body
+  rotate: false
+  xy: 2, 2
+  size: 226, 231
+  orig: 228, 231
+  offset: 1, 0
+  index: -1
+body_30
+  rotate: false
+  xy: 230, 2
+  size: 226, 231
+  orig: 226, 231
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 612, 15
+  size: 33, 123
+  orig: 36, 127
+  offset: 1, 2
+  index: -1
+eye_angry
+  rotate: true
+  xy: 661, 33
+  size: 145, 156
+  orig: 145, 156
+  offset: 0, 0
+  index: -1
+f_belt
+  rotate: true
+  xy: 893, 500
+  size: 90, 71
+  orig: 92, 73
+  offset: 1, 1
+  index: -1
+f_face
+  rotate: false
+  xy: 416, 344
+  size: 304, 246
+  orig: 308, 254
+  offset: 2, 5
+  index: -1
+foot
+  rotate: true
+  xy: 819, 44
+  size: 134, 89
+  orig: 136, 91
+  offset: 1, 1
+  index: -1
+foot_30
+  rotate: true
+  xy: 458, 4
+  size: 134, 152
+  orig: 134, 152
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 235
+  size: 412, 355
+  orig: 414, 357
+  offset: 1, 1
+  index: -1
+s_belt
+  rotate: false
+  xy: 893, 427
+  size: 35, 71
+  orig: 39, 74
+  offset: 2, 1
+  index: -1
+s_face
+  rotate: false
+  xy: 722, 345
+  size: 169, 245
+  orig: 172, 253
+  offset: 1, 5
+  index: -1
+sd
+  rotate: true
+  xy: 416, 243
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1

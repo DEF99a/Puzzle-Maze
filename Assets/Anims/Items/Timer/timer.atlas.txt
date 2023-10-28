@@ -1,0 +1,41 @@
+
+timer.png
+size: 148,84
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 58
+  rotate: true
+  xy: 2, 2
+  size: 79, 99
+  orig: 79, 99
+  offset: 0, 0
+  index: -1
+ball
+  rotate: false
+  xy: 103, 40
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+core
+  rotate: false
+  xy: 129, 9
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+kim
+  rotate: false
+  xy: 129, 24
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+kim_sd
+  rotate: true
+  xy: 103, 23
+  size: 15, 24
+  orig: 15, 24
+  offset: 0, 0
+  index: -1

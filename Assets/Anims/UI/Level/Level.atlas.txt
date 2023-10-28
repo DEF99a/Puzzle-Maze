@@ -1,0 +1,20 @@
+
+Level.png
+size: 816,112
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mid
+  rotate: false
+  xy: 2, 2
+  size: 717, 105
+  orig: 719, 107
+  offset: 1, 1
+  index: -1
+side
+  rotate: true
+  xy: 721, 10
+  size: 97, 93
+  orig: 99, 95
+  offset: 1, 1
+  index: -1

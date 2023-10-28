@@ -1,0 +1,90 @@
+
+Main_05.png
+size: 1060,996
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+angry_mask
+  rotate: false
+  xy: 854, 792
+  size: 201, 202
+  orig: 201, 203
+  offset: 0, 1
+  index: -1
+ball
+  rotate: false
+  xy: 697, 40
+  size: 164, 164
+  orig: 164, 164
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 499
+  size: 436, 495
+  orig: 436, 495
+  offset: 0, 0
+  index: -1
+body s
+  rotate: false
+  xy: 440, 499
+  size: 412, 495
+  orig: 412, 495
+  offset: 0, 0
+  index: -1
+body_30
+  rotate: false
+  xy: 2, 2
+  size: 436, 495
+  orig: 436, 495
+  offset: 0, 0
+  index: -1
+f_face
+  rotate: false
+  xy: 440, 241
+  size: 326, 256
+  orig: 328, 259
+  offset: 1, 1
+  index: -1
+foot
+  rotate: true
+  xy: 965, 656
+  size: 134, 89
+  orig: 134, 89
+  offset: 0, 0
+  index: -1
+foot_30
+  rotate: false
+  xy: 863, 52
+  size: 134, 152
+  orig: 134, 152
+  offset: 0, 0
+  index: -1
+hat r
+  rotate: false
+  xy: 768, 206
+  size: 264, 291
+  orig: 266, 291
+  offset: 1, 0
+  index: -1
+hat s
+  rotate: false
+  xy: 854, 521
+  size: 109, 269
+  orig: 109, 269
+  offset: 0, 0
+  index: -1
+s_face
+  rotate: true
+  xy: 440, 21
+  size: 218, 255
+  orig: 219, 259
+  offset: 0, 1
+  index: -1
+sd
+  rotate: true
+  xy: 965, 555
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1

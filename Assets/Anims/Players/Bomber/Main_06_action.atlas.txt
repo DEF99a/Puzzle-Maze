@@ -1,0 +1,20 @@
+
+Main_06_action.png
+size: 264,160
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blow
+  rotate: false
+  xy: 2, 2
+  size: 156, 156
+  orig: 157, 158
+  offset: 1, 1
+  index: -1
+water boom
+  rotate: false
+  xy: 160, 55
+  size: 102, 103
+  orig: 104, 105
+  offset: 1, 1
+  index: -1

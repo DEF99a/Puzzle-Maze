@@ -1,0 +1,27 @@
+
+Main_03_action.png
+size: 588,312
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire ember
+  rotate: true
+  xy: 325, 7
+  size: 70, 77
+  orig: 78, 85
+  offset: 4, 4
+  index: -1
+fire_core
+  rotate: false
+  xy: 325, 79
+  size: 260, 231
+  orig: 279, 237
+  offset: 4, 2
+  index: -1
+fire_outer
+  rotate: false
+  xy: 2, 2
+  size: 321, 308
+  orig: 325, 318
+  offset: 0, 4
+  index: -1

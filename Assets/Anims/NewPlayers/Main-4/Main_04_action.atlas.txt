@@ -1,0 +1,13 @@
+
+Main_04_action.png
+size: 504,536
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Main_04_action
+  rotate: false
+  xy: 2, 2
+  size: 499, 531
+  orig: 505, 536
+  offset: 0, 5
+  index: -1

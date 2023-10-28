@@ -1,0 +1,27 @@
+
+Enemy_12.png
+size: 372,260
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 310, 256
+  orig: 310, 256
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 314, 163
+  size: 56, 95
+  orig: 60, 102
+  offset: 2, 6
+  index: -1
+sd
+  rotate: true
+  xy: 314, 62
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1

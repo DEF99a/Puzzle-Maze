@@ -1,0 +1,188 @@
+
+Enemy_05.png
+size: 1800,772
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body f
+  rotate: true
+  xy: 425, 312
+  size: 458, 313
+  orig: 460, 315
+  offset: 1, 1
+  index: -1
+body r
+  rotate: true
+  xy: 2, 312
+  size: 458, 421
+  orig: 460, 423
+  offset: 1, 1
+  index: -1
+body s
+  rotate: true
+  xy: 740, 358
+  size: 412, 384
+  orig: 415, 386
+  offset: 1, 1
+  index: -1
+cheack f r
+  rotate: true
+  xy: 1126, 382
+  size: 388, 131
+  orig: 390, 133
+  offset: 1, 1
+  index: -1
+cheek s
+  rotate: false
+  xy: 1432, 463
+  size: 202, 127
+  orig: 204, 130
+  offset: 1, 1
+  index: -1
+ex_out
+  rotate: true
+  xy: 764, 7
+  size: 349, 345
+  orig: 359, 356
+  offset: 5, 6
+  index: -1
+eye
+  rotate: false
+  xy: 601, 9
+  size: 38, 38
+  orig: 40, 40
+  offset: 1, 1
+  index: -1
+eye ball
+  rotate: true
+  xy: 1636, 339
+  size: 124, 160
+  orig: 126, 162
+  offset: 1, 1
+  index: -1
+foot f
+  rotate: false
+  xy: 1259, 673
+  size: 171, 97
+  orig: 173, 99
+  offset: 1, 1
+  index: -1
+foot r
+  rotate: false
+  xy: 1259, 574
+  size: 171, 97
+  orig: 173, 99
+  offset: 1, 1
+  index: -1
+foot s
+  rotate: false
+  xy: 1432, 364
+  size: 199, 97
+  orig: 201, 99
+  offset: 1, 1
+  index: -1
+hair f r
+  rotate: true
+  xy: 1639, 465
+  size: 148, 156
+  orig: 150, 158
+  offset: 1, 1
+  index: -1
+hair s
+  rotate: true
+  xy: 534, 49
+  size: 261, 228
+  orig: 263, 231
+  offset: 1, 2
+  index: -1
+hand f
+  rotate: false
+  xy: 1606, 5
+  size: 152, 165
+  orig: 155, 167
+  offset: 1, 1
+  index: -1
+hand r
+  rotate: true
+  xy: 1259, 420
+  size: 152, 168
+  orig: 155, 170
+  offset: 1, 1
+  index: -1
+hand s
+  rotate: false
+  xy: 1639, 615
+  size: 158, 155
+  orig: 160, 158
+  offset: 1, 1
+  index: -1
+head
+  rotate: true
+  xy: 1111, 16
+  size: 340, 319
+  orig: 342, 321
+  offset: 1, 1
+  index: -1
+horn
+  rotate: false
+  xy: 1628, 201
+  size: 108, 136
+  orig: 110, 138
+  offset: 1, 1
+  index: -1
+lash front
+  rotate: true
+  xy: 2, 6
+  size: 304, 172
+  orig: 306, 174
+  offset: 1, 1
+  index: -1
+lash s
+  rotate: true
+  xy: 1432, 3
+  size: 167, 172
+  orig: 170, 174
+  offset: 2, 1
+  index: -1
+mouth front
+  rotate: true
+  xy: 334, 32
+  size: 278, 198
+  orig: 280, 200
+  offset: 1, 1
+  index: -1
+mouth s
+  rotate: true
+  xy: 176, 21
+  size: 289, 156
+  orig: 292, 159
+  offset: 1, 2
+  index: -1
+nose front
+  rotate: false
+  xy: 1432, 172
+  size: 194, 190
+  orig: 196, 192
+  offset: 1, 1
+  index: -1
+nose s
+  rotate: false
+  xy: 1432, 592
+  size: 205, 178
+  orig: 207, 181
+  offset: 1, 1
+  index: -1
+sd
+  rotate: false
+  xy: 641, 12
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1
+teeth
+  rotate: true
+  xy: 534, 2
+  size: 45, 65
+  orig: 47, 67
+  offset: 1, 1
+  index: -1

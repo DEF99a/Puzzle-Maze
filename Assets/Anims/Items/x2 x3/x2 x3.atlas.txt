@@ -1,0 +1,41 @@
+
+x2 x3.png
+size: 276,112
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+core
+  rotate: false
+  xy: 223, 9
+  size: 39, 33
+  orig: 41, 35
+  offset: 1, 1
+  index: -1
+main
+  rotate: false
+  xy: 114, 6
+  size: 107, 103
+  orig: 107, 103
+  offset: 0, 0
+  index: -1
+ray_spiral
+  rotate: false
+  xy: 2, 2
+  size: 110, 107
+  orig: 112, 109
+  offset: 1, 1
+  index: -1
+x2
+  rotate: false
+  xy: 223, 77
+  size: 50, 32
+  orig: 50, 32
+  offset: 0, 0
+  index: -1
+x3
+  rotate: false
+  xy: 223, 44
+  size: 47, 31
+  orig: 47, 31
+  offset: 0, 0
+  index: -1

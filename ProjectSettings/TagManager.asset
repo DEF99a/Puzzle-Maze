@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Box
+  - BombEffect
+  - BongBong
+  - SlowItem
+  - BoxLarger
+  - ItemOnMap
+  - FireBallExplode
+  - TrapItem
+  - BoxBound
+  - Hook
+  - MarioBullet
+  - Mario2BombExplode
+  - SongokuHook
+  - RedImpostorCollider
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Mask
+  - BgMask
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2841780469
+    locked: 0
+  - name: Obtacles
+    uniqueID: 2841065463
+    locked: 0
+  - name: Player
+    uniqueID: 1273307117
+    locked: 0
+  - name: Deco
+    uniqueID: 861852675
+    locked: 0
+  - name: UI
+    uniqueID: 85194015
+    locked: 0

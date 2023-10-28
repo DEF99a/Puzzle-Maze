@@ -1,0 +1,27 @@
+
+box02_wood_03.png
+size: 232,104
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+box01_ground_01
+  rotate: true
+  xy: 2, 2
+  size: 100, 116
+  orig: 100, 116
+  offset: 0, 0
+  index: -1
+flash
+  rotate: false
+  xy: 191, 62
+  size: 39, 40
+  orig: 39, 40
+  offset: 0, 0
+  index: -1
+lower
+  rotate: true
+  xy: 120, 2
+  size: 100, 69
+  orig: 100, 83
+  offset: 0, 14
+  index: -1

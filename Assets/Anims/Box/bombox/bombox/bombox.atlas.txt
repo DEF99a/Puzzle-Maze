@@ -1,0 +1,48 @@
+
+bombox.png
+size: 676,508
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+box01_ground_01
+  rotate: false
+  xy: 2, 4
+  size: 96, 107
+  orig: 100, 116
+  offset: 2, 7
+  index: -1
+ex_60
+  rotate: true
+  xy: 2, 113
+  size: 392, 320
+  orig: 404, 331
+  offset: 6, 5
+  index: -1
+ex_core
+  rotate: true
+  xy: 482, 11
+  size: 147, 146
+  orig: 151, 151
+  offset: 2, 2
+  index: -1
+ex_out
+  rotate: false
+  xy: 324, 160
+  size: 349, 345
+  orig: 359, 356
+  offset: 5, 6
+  index: -1
+flash
+  rotate: false
+  xy: 324, 2
+  size: 156, 156
+  orig: 157, 158
+  offset: 1, 1
+  index: -1
+lit
+  rotate: false
+  xy: 630, 122
+  size: 37, 36
+  orig: 39, 37
+  offset: 1, 1
+  index: -1

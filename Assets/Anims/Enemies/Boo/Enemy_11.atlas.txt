@@ -1,0 +1,90 @@
+
+Enemy_11.png
+size: 1516,368
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 153 copy
+  rotate: true
+  xy: 1346, 13
+  size: 114, 162
+  orig: 114, 162
+  offset: 0, 0
+  index: -1
+arm
+  rotate: true
+  xy: 1403, 271
+  size: 94, 65
+  orig: 96, 67
+  offset: 1, 1
+  index: -1
+body f
+  rotate: true
+  xy: 840, 13
+  size: 352, 360
+  orig: 354, 362
+  offset: 1, 1
+  index: -1
+body r
+  rotate: true
+  xy: 414, 13
+  size: 352, 424
+  orig: 354, 426
+  offset: 1, 1
+  index: -1
+body side
+  rotate: false
+  xy: 2, 5
+  size: 410, 360
+  orig: 412, 362
+  offset: 1, 1
+  index: -1
+elash f
+  rotate: true
+  xy: 1353, 133
+  size: 232, 48
+  orig: 236, 57
+  offset: 2, 8
+  index: -1
+elash s
+  rotate: true
+  xy: 1403, 131
+  size: 138, 48
+  orig: 140, 57
+  offset: 1, 8
+  index: -1
+eye f
+  rotate: false
+  xy: 1470, 313
+  size: 41, 52
+  orig: 43, 54
+  offset: 1, 1
+  index: -1
+eye s
+  rotate: true
+  xy: 1453, 141
+  size: 27, 52
+  orig: 29, 54
+  offset: 1, 1
+  index: -1
+mouth
+  rotate: true
+  xy: 1202, 129
+  size: 236, 149
+  orig: 240, 157
+  offset: 2, 5
+  index: -1
+sd
+  rotate: true
+  xy: 1453, 170
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1
+tongue s
+  rotate: true
+  xy: 1202, 2
+  size: 125, 142
+  orig: 126, 143
+  offset: 0, 0
+  index: -1

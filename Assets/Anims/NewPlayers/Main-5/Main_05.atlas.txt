@@ -1,0 +1,76 @@
+
+Main_05.png
+size: 1888,504
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ball
+  rotate: false
+  xy: 1668, 21
+  size: 162, 162
+  orig: 163, 163
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 5
+  size: 462, 495
+  orig: 462, 495
+  offset: 0, 0
+  index: -1
+body s
+  rotate: false
+  xy: 930, 5
+  size: 412, 495
+  orig: 412, 495
+  offset: 0, 0
+  index: -1
+body_30
+  rotate: false
+  xy: 466, 5
+  size: 462, 495
+  orig: 462, 495
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 1832, 60
+  size: 33, 123
+  orig: 34, 125
+  offset: 0, 1
+  index: -1
+f_face
+  rotate: true
+  xy: 1344, 138
+  size: 362, 322
+  orig: 366, 327
+  offset: 2, 5
+  index: -1
+foot
+  rotate: true
+  xy: 1498, 2
+  size: 134, 89
+  orig: 134, 89
+  offset: 0, 0
+  index: -1
+foot_30
+  rotate: true
+  xy: 1344, 2
+  size: 134, 152
+  orig: 134, 152
+  offset: 0, 0
+  index: -1
+s_face
+  rotate: false
+  xy: 1668, 185
+  size: 216, 315
+  orig: 218, 322
+  offset: 0, 6
+  index: -1
+sd
+  rotate: true
+  xy: 1589, 37
+  size: 99, 35
+  orig: 101, 37
+  offset: 1, 1
+  index: -1

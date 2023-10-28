@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6980835476350343353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6980835476350343355}
+  - component: {fileID: 6980835476350343352}
+  m_Layer: 0
+  m_Name: EntitySprites
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6980835476350343355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980835476350343353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.2967086, y: -0.08829117, z: -67.93592}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6980835476350343352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980835476350343353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c72d6a5b87ada349bda96c7e567d36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - entityType: 20
+    sprite: {fileID: 21300000, guid: e93a8c00d4b404746b6d6c218787876c, type: 3}
+  - entityType: 21
+    sprite: {fileID: 21300000, guid: cbba892c940ad8f4fab2d41447e20e65, type: 3}
+  - entityType: 22
+    sprite: {fileID: 21300000, guid: 3e2b7c75ac1230c48b36669320768e10, type: 3}
+  - entityType: 23
+    sprite: {fileID: 21300000, guid: 967c45267c4d6b748b8ea8ca57f34ad9, type: 3}
+  - entityType: 27
+    sprite: {fileID: 21300000, guid: 3026aad89fb65444d85a09f4c61031d9, type: 3}
+  - entityType: 28
+    sprite: {fileID: 21300000, guid: 6308a318a48d7d44fb2ceb356a37e720, type: 3}
+  - entityType: 29
+    sprite: {fileID: 21300000, guid: bbd9ffcbc8c200847a9da40af68c7767, type: 3}
+  - entityType: 30
+    sprite: {fileID: 21300000, guid: 43f33e06afef1e04ca3841da866c97f1, type: 3}
+  - entityType: 31
+    sprite: {fileID: 21300000, guid: c647b7afe308ea24b9b61f3615ab131c, type: 3}
+  - entityType: 32
+    sprite: {fileID: 21300000, guid: 1bfe15c70e2bd5d4ab8ffacf52be6fec, type: 3}
+  - entityType: 33
+    sprite: {fileID: 21300000, guid: f175db2dd29fa274a8a54bb37c385609, type: 3}
+  - entityType: 34
+    sprite: {fileID: 21300000, guid: e83e44a0c9dd76d49b64c87feba6805b, type: 3}
+  - entityType: 35
+    sprite: {fileID: 21300000, guid: 9eeaa2036c4c7de4694395757679f054, type: 3}
+  - entityType: 36
+    sprite: {fileID: 21300000, guid: 5e7266c4365f1ca4fa29242278b32758, type: 3}
+  - entityType: 37
+    sprite: {fileID: 21300000, guid: 9d6ab85d00393504bbb95a30cd993d8b, type: 3}
+  - entityType: 38
+    sprite: {fileID: 21300000, guid: 3b6624b6dee668945b940a8e8bffb203, type: 3}
+  - entityType: 39
+    sprite: {fileID: 21300000, guid: 750e580ee9ec6f04697dc67f7d620c7c, type: 3}
+  - entityType: 43
+    sprite: {fileID: 21300000, guid: cb871b6a61bb7ae448b65a79cf7060cf, type: 3}
+  questSprites:
+  - questType: 0
+    enemyType: 0
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 9873292f3e3defc4281ef20629d2961c, type: 3}
+  - questType: 0
+    enemyType: 1
+    entityType: 0
+    sprite: {fileID: 21300000, guid: fe21359e03998eb40879d9026bc8cc4b, type: 3}
+  - questType: 0
+    enemyType: 2
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 3bf8b1ead7720fd4090c93f7c6014b6a, type: 3}
+  - questType: 0
+    enemyType: 3
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 1397a5f4ea52b47419b7812e22b9b2e8, type: 3}
+  - questType: 0
+    enemyType: 4
+    entityType: 0
+    sprite: {fileID: 21300000, guid: ab86cc94c1abf4c41b713f69eb72d8e1, type: 3}
+  - questType: 0
+    enemyType: 5
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 0fe28035cf420af4790ed6d3e09f083a, type: 3}
+  - questType: 0
+    enemyType: 6
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 620dee1023c981345af94b73c38d255c, type: 3}
+  - questType: 0
+    enemyType: 7
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 0d479bbbef15f7b42907946759172c1f, type: 3}
+  - questType: 0
+    enemyType: 8
+    entityType: 0
+    sprite: {fileID: 21300000, guid: adfee4db6d87c844197179621567e26a, type: 3}
+  - questType: 0
+    enemyType: 9
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 507444cbb6c3f1e42867537c86078667, type: 3}
+  - questType: 0
+    enemyType: 10
+    entityType: 0
+    sprite: {fileID: 21300000, guid: da3561fc1d81a484584a8254fcd7bdef, type: 3}
+  - questType: 1
+    enemyType: 255
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 8c5e90e4c006b184db1c6a2f92f80207, type: 3}
+  - questType: 2
+    enemyType: 255
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 40962cc3baa23734f81a600547a5d6bb, type: 3}
+  - questType: 3
+    enemyType: 255
+    entityType: 0
+    sprite: {fileID: 21300000, guid: f37482543f3d03f4aa32e3c1fed60ed8, type: 3}
+  - questType: 4
+    enemyType: 255
+    entityType: 23
+    sprite: {fileID: 21300000, guid: 967c45267c4d6b748b8ea8ca57f34ad9, type: 3}
+  - questType: 4
+    enemyType: 255
+    entityType: 38
+    sprite: {fileID: 21300000, guid: 6af84b1a77830374d8b7fe11f97cc04d, type: 3}
+  - questType: 4
+    enemyType: 255
+    entityType: 34
+    sprite: {fileID: 21300000, guid: 27d4f95d4f93a9149a677e24ca1dd44d, type: 3}
+  - questType: 4
+    enemyType: 255
+    entityType: 22
+    sprite: {fileID: 21300000, guid: f073580c0a08e4c43a91e8141b61512f, type: 3}
+  - questType: 4
+    enemyType: 255
+    entityType: 21
+    sprite: {fileID: 21300000, guid: 998b05be509e0f34eb82b35240232a79, type: 3}
+  - questType: 4
+    enemyType: 255
+    entityType: 20
+    sprite: {fileID: 21300000, guid: 8be2db95a6a85be4988216b5f9f67f10, type: 3}
+  - questType: 5
+    enemyType: 255
+    entityType: 0
+    sprite: {fileID: 21300000, guid: 112ba0cdc17ee6b4b9539eb95251ab70, type: 3}
+  - questType: 6
+    enemyType: 255
+    entityType: 0
+    sprite: {fileID: 21300000, guid: a7d681852784b994cb5754b543868246, type: 3}
+  playerSprites:
+  - sprite: {fileID: 21300000, guid: 1e3495cf2d638534782fcdf2a41bfcc9, type: 3}
+    playerType: 1
+  - sprite: {fileID: 21300000, guid: b645fda9513775c49ae76a91557f2feb, type: 3}
+    playerType: 2
+  - sprite: {fileID: 21300000, guid: bc11a6272583a10419bc0b37b97e009c, type: 3}
+    playerType: 3
+  - sprite: {fileID: 21300000, guid: 468be31a9586d004cac53fad2813df05, type: 3}
+    playerType: 4
+  - sprite: {fileID: 21300000, guid: 046ca3235c70987448527878200add6a, type: 3}
+    playerType: 5
+  - sprite: {fileID: 21300000, guid: 4baeb39af7339e64280fb5cf22058bb5, type: 3}
+    playerType: 6
+  skillSprites:
+  - sprite: {fileID: 21300000, guid: ef79c8d7601d8ca448454142b79a8eda, type: 3}
+    playerType: 2
+  - sprite: {fileID: 21300000, guid: 49918c22cb60c7046adafcc678bb2b64, type: 3}
+    playerType: 3
+  - sprite: {fileID: 21300000, guid: 775268a39c1fcfb42b6383243619ea7e, type: 3}
+    playerType: 4
+  - sprite: {fileID: 21300000, guid: 4a4e881fa507adb4cacd4f9a65720a81, type: 3}
+    playerType: 5
+  - sprite: {fileID: 21300000, guid: 983e5d1faeaa3b746984a67fa0474553, type: 3}
+    playerType: 6
+  - sprite: {fileID: 21300000, guid: 4a4e881fa507adb4cacd4f9a65720a81, type: 3}
+    playerType: 1
+  doorOpenSprites:
+  - name: door
+    sprite: {fileID: 460193881215093116, guid: e4e053a95dbf5014aa9a85d1469688d7, type: 3}
+  - name: 
+    sprite: {fileID: -5594869858612994360, guid: e4e053a95dbf5014aa9a85d1469688d7, type: 3}
+  - name: 
+    sprite: {fileID: 3340181804172212470, guid: e4e053a95dbf5014aa9a85d1469688d7, type: 3}
+  - name: 
+    sprite: {fileID: -1453506710995707262, guid: e4e053a95dbf5014aa9a85d1469688d7, type: 3}

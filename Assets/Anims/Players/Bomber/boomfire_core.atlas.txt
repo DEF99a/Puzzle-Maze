@@ -1,0 +1,34 @@
+
+boomfire_core.png
+size: 416,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+core 1
+  rotate: true
+  xy: 311, 2
+  size: 101, 100
+  orig: 101, 101
+  offset: 0, 1
+  index: -1
+core 2
+  rotate: false
+  xy: 105, 2
+  size: 101, 101
+  orig: 101, 101
+  offset: 0, 0
+  index: -1
+core 3
+  rotate: false
+  xy: 208, 2
+  size: 101, 101
+  orig: 101, 101
+  offset: 0, 0
+  index: -1
+core 4
+  rotate: false
+  xy: 2, 2
+  size: 101, 101
+  orig: 101, 101
+  offset: 0, 0
+  index: -1

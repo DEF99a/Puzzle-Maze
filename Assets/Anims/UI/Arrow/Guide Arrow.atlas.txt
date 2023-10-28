@@ -1,0 +1,20 @@
+
+Guide Arrow.png
+size: 220,104
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arrow
+  rotate: true
+  xy: 2, 4
+  size: 98, 112
+  orig: 100, 114
+  offset: 1, 1
+  index: -1
+square tile
+  rotate: false
+  xy: 116, 2
+  size: 100, 100
+  orig: 102, 102
+  offset: 1, 1
+  index: -1
