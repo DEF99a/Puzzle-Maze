@@ -85,6 +85,5 @@ public class PackItemView : MonoBehaviour
 
     public void Main()
     {
-        Purchaser.Instance.Buy(packageType);
     }
 }

@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,9 +105,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -190,7 +191,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3a45ad2aaa1304860800000000000000
-      internalID: 7512058787400406179
+      internalID: 1288577493223787326
       vertices: []
       indices: 
       edges: []
@@ -211,7 +212,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c41a06a97dfef2f40800000000000000
-      internalID: 5706042962188738892
+      internalID: 7512058787400406179
       vertices: []
       indices: 
       edges: []
@@ -688,6 +689,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      mid: 303321429231596458
+      one_shadow: 7539784141390442916
+      one_vertical: 3001890864386342054
+      one_top_left_bot_right: 8210073415376109152
+      out_bot_left: -7366035501492649214
+      one_vertical_bot_right: -1140614134962851879
+      one_bot: 3752880363869344474
+      one_horizontal: -7544730941155876490
+      out_left: -931998150086321589
+      in_bot_left: 7512058787400406179
+      out_bot_right: 28501489923640477
+      vertical_top_right: -1893390562594449948
+      one_cross_line_top: 5143059980020992149
+      in_top_left: -4657634040394562782
+      in_bot_right: 1288577493223787326
+      out_bot: 1275001857320000418
+      one_bot_left_top_right: -4310129019831641542
+      mid_shadow: 8993057520056754894
+      out_right: -2879905376413679092
+      vertical_bot_left: -8422115161194440521
+      one_vertical_top_right: -3562362368279462800
+      in_top_right: -4055887926643394865
+      right_shadow: 4017990105948878613
+      left_shadow: -440056623468820604
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

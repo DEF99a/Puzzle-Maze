@@ -129,6 +129,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -137,9 +138,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -940,6 +941,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Gate_Set _1_6: 2081658008290955110
+      Gate_Set _1_1: -7052988091780434142
+      Gate_Set _1_20: 4014847180620628934
+      Gate_Set _1_4: 279554349514263449
+      Gate_Set _1_10: -6341378934302048777
+      Gate_Set _1_13: 7822324533614023993
+      Gate_Set _1_27: -8187228415252518672
+      Gate_Set _1_19: -5537386741942656324
+      Gate_Set _1_5: 5930853498598815845
+      Gate_Set _1_8: 4929338504139637420
+      Gate_Set _1_28: 5605174246113194599
+      Gate_Set _1_31: 4929337049118312944
+      Gate_Set _1_0: -1200304111223390156
+      Gate_Set _1_3: 1814978345220837251
+      Gate_Set _1_22: 227511553008035840
+      Gate_Set _1_11: -1867253476383083031
+      Gate_Set _1_29: -4432307607270049813
+      Gate_Set _1_30: 6497783594212887066
+      Gate_Set _1_24: -5529015904193094348
+      Gate_Set _1_2: -7932466585136747830
+      Gate_Set _1_17: 6266817442383914697
+      Gate_Set _1_32: 4727194366146077686
+      Gate_Set _1_9: -8958598121536539230
+      Gate_Set _1_14: -8601732835972258381
+      Gate_Set _1_23: 9184652715732615935
+      Gate_Set _1_16: -8029106377135220336
+      Gate_Set _1_7: -7514234660866548232
+      Gate_Set _1_25: -2700926571218424733
+      Gate_Set _1_18: -4756577705060146513
+      Gate_Set _1_33: 472339231911398241
+      Gate_Set _1_26: 2830341154279335222
+      Gate_Set _1_15: 5605288277706890355
+      Gate_Set _1_12: -6994405791383412618
+      Gate_Set _1_21: 9102837402734499023
+      Gate_Set _1_34: 5144566176543466381
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

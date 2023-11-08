@@ -204,6 +204,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1426,6 +1427,61 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      shadow_bot_right: 9073404759930219809
+      water_out_bot_left: -4707047261084645745
+      water_out_left: 7185271939453557621
+      one_vertical: -6681051466216582359
+      one_horizontal_top_left: 6470619912861846962
+      one_top_left_bot_right: -3348771987860571337
+      one_vertical_bot_right: 6210026771079956310
+      one_horizontal: -5420656716275267691
+      one_fork_line_right: -542113084225860626
+      water_out_bot_right: -7899737534686742331
+      Wall_set_demo_57: 6719702683012544552
+      shadow_mid: 6935242908457001585
+      one_cross_line_top: 6095892681999496540
+      one_bot_left: -4358162563006203406
+      one_top: 312590135658438233
+      one_horizontal_bot_right: -5686221960944420750
+      one_vertical_top_left: -8118667336528512758
+      water_in_bot_left: 93782710764024454
+      water_out_top_left: -6796505371458737224
+      one_top_left: -2497968444220009503
+      one_cross_line: -3773713615822472566
+      one_fork_line_left: 1370529671581589061
+      one_top_right: -6042547077036886339
+      water_out_bot: 2283111424680731276
+      one_cross_line_top_right: 7878309562635691294
+      water_in_top_right: 3441086783939240925
+      one_horizontal_top_right: 3317598423272481842
+      one_fork_line_bot: 3124977423291819040
+      one_cross_line_right: -6279259580679705251
+      one_cross_line_left: -3146013892816177657
+      one_mid: -5034831986976725133
+      water_in_bot_right: 6546502004151966762
+      shadow_one_mid: -745506959930588440
+      one_cross_line_bot: -6573604876844450211
+      water_mid: 6092716434712476956
+      one_cross_line_bot_left: -8671695021500968646
+      one_bot: 1540543664524358628
+      Wall_set_demo_59: -6876987002258725654
+      water_out_top: 5633124859280511090
+      one_right: 7120421080775525667
+      one_left: -7236817745552040783
+      water_in_top_left: 7881072255196577755
+      one_cross_line_top_left: 4572683051697002196
+      one_bot_left_top_right: -2884936950368621673
+      water_out_right: 5766554028692393383
+      one_vertical_bot_left: -4024678020435369447
+      one_bot_right: 5564499919095507532
+      one_vertical_top_right: 1652244209712380611
+      water_out_top_right: -644794929076916581
+      one_horizontal_bot_left: 9158999183075220405
+      one_fork_line_top: -286948069688004496
+      one_cross_line_bot_right: 1705399018425266780
+      shadow_bot_left: 1207945759111980136
+      Wall_set_demo_58: -1836054451934710917
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

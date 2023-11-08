@@ -183,6 +183,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -192,8 +193,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
@@ -1372,6 +1373,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      water_set_1_13: -5154282593403924388
+      water_set_1_48: 5430884695443235450
+      water_set_1_43: 9204745785464003133
+      water_set_1_45: 7710796134267458442
+      water_set_1_23: 4971510811795661759
+      water_set_1_46: -2623987944442053408
+      water_set_1_3: -5456752379226375573
+      water_set_1_27: 32387782092322124
+      water_set_1_39: 2972997440879462610
+      water_set_1_0: -8271535095912248710
+      water_set_1_49: -4046481025403118054
+      water_set_1_30: -7799976066548736416
+      water_set_1_7: -6814130118522520854
+      water_set_1_31: 8925243130693837404
+      water_set_1_32: -5113691227848155709
+      water_set_1_4: 4154901124476611904
+      water_set_1_25: -1471754447004736305
+      water_set_1_51: -270170788386406446
+      water_set_1_12: -248913801822411551
+      water_set_1_16: -698992961935753279
+      water_set_1_47: -5517078605717792607
+      water_set_1_42: -277755733397104011
+      water_set_1_50: 5293798080526108780
+      water_set_1_18: -8352872270630472152
+      water_set_1_10: -5726469649830217599
+      water_set_1_37: -7596627099402591379
+      water_set_1_22: 2025068748184984212
+      water_set_1_44: -4159351709541770317
+      water_set_1_28: -6399653346986749125
+      water_set_1_6: 89254299031748379
+      water_set_1_17: 9050516293149774505
+      water_set_1_35: -6603855711130050178
+      water_set_1_2: -7707049910438358524
+      water_set_1_40: -5447497745363386249
+      water_set_1_41: 6762588185392048935
+      water_set_1_14: -8720441801047406277
+      water_set_1_5: 2247689491923196823
+      water_set_1_19: 1477763009084653284
+      water_set_1_29: 3886040342720132976
+      water_set_1_34: -2194377145586074694
+      water_set_1_21: 1835929899837678744
+      water_set_1_52: -3221710986760580688
+      water_set_1_9: -5064798764949281863
+      water_set_1_11: -6309476642284946908
+      water_set_1_24: -1320357659925886678
+      water_set_1_36: -2970531670657178253
+      water_set_1_1: -28468092303160704
+      water_set_1_38: 8253933960460311007
+      water_set_1_20: 5629306356205382789
+      water_set_1_15: -9095998248547031600
+      water_set_1_26: 5439197087617281691
+      water_set_1_8: -947305250434507081
+      water_set_1_33: 3948797283738433582
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

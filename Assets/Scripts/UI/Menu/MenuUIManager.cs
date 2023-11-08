@@ -561,7 +561,6 @@ public class MenuUIManager : MonoBehaviour
 
     public void RestoreBtnClicked()
     {
-        Purchaser.Instance.RestorePurchases();
     }
 
     public void ShowQuestPanel()
@@ -588,7 +587,6 @@ public class MenuUIManager : MonoBehaviour
 
     public void RemoveAd()
     {
-        Purchaser.Instance.Buy(Assets.Scripts.Data.ShopData.PackageType.RemoveAd);
     }
 
     private void ShowHideGiftBtn()

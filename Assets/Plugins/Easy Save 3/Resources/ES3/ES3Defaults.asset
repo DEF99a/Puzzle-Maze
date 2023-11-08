@@ -33,7 +33,6 @@ MonoBehaviour:
     - Assembly-CSharp-firstpass
     - spine-unity-examples
     - spine-unity
-    - PsdPlugin
     - spine-unity-editor
     - spine-unity-examples-editor
     showAdvancedSettings: 0

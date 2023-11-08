@@ -99,6 +99,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,9 +108,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -700,6 +701,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ground_set_1_17: 8761935946215694905
+      ground_set_1_20: -6796347993268767865
+      ground_set_1_16: 4009417325132777972
+      ground_set_1_21: -4717025515720734096
+      ground_set_1_5: -4213078965094130977
+      ground_set_1_13: 1352673077654087970
+      ground_set_1_2: -6772682614584364408
+      ground_set_1_14: 7982166253444210034
+      ground_set_1_0: -4530040072745997775
+      ground_set_1_23: -2953330826538194887
+      ground_set_1_11: 6281454005831853068
+      ground_set_1_9: 168048643936261369
+      ground_set_1_18: 8815797890993837887
+      ground_set_1_3: 5109792039216003517
+      ground_set_1_1: -1823559182612738837
+      ground_set_1_10: 2068846332156290033
+      ground_set_1_19: -882168647017826068
+      ground_set_1_22: 791806417175348684
+      ground_set_1_4: -4104530696633541943
+      ground_set_1_8: -4855854114345068751
+      ground_set_1_15: 1679058533248775368
+      ground_set_1_6: 8558202967800786643
+      ground_set_1_24: -8927757023890416173
+      ground_set_1_7: -7827229851243048344
+      ground_set_1_12: -9045114826837895059
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

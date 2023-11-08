@@ -108,6 +108,5 @@ public class GemShopItemView : MonoBehaviour
 
     public void Main()
     {
-        Purchaser.Instance.Buy(packageType);
     }
 }
