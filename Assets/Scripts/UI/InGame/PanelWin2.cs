@@ -81,6 +81,8 @@ public class PanelWin2 : MonoBehaviour
 
     private void OnEnable()
     {
+        FBInstantSaveData.Info.Level++;
+        FBInstantSaveData.SaveData();
         GameManager.instance.Stop();
 
         AudioManager.instance.StopMusic(MapManager.instance.GameMusicStr);
@@ -153,17 +155,20 @@ public class PanelWin2 : MonoBehaviour
             }
         }
 
-        if (MapManager.instance.CurLevelNumber >= 5 && !ES3.Load(StringDefine.ShowRate, false))
-        {
-            container.gameObject.SetActive(false);
-            panelRate.gameObject.SetActive(true);
-            ES3.Save(StringDefine.ShowRate, true);
-        }
-        else
-        {
-            StartCoroutine(RunStar(starAmount));
-            IronSourceAd.instance.ShowBanner();
-        }
+        StartCoroutine(RunStar(starAmount));
+        IronSourceAd.instance.ShowBanner();
+
+        //if (MapManager.instance.CurLevelNumber >= 5 && !ES3.Load(StringDefine.ShowRate, false))
+        //{
+        //    container.gameObject.SetActive(false);
+        //    panelRate.gameObject.SetActive(true);
+        //    ES3.Save(StringDefine.ShowRate, true);
+        //}
+        //else
+        //{
+        //    StartCoroutine(RunStar(starAmount));
+        //    IronSourceAd.instance.ShowBanner();
+        //}
     }
 
     IEnumerator RunStar(int starAmount)
@@ -376,5 +381,53 @@ public class PanelWin2 : MonoBehaviour
         //    EasyMobile.StoreReview.RequestRating();
         //    FireBaseManager.instance.LogRate("Rate5");
         //}
+    }
+
+    public void ShareFB()
+    {
+        var img = "data:image/png;base64,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";
+        Dictionary<string, object> p = new Dictionary<string, object>();
+        p.Add("intent", "SHARE");
+        p.Add("image", img);
+        p.Add("text", "I collect " + coinTotal + " Gold");
+        p.Add("data", new Dictionary<string, object>());
+
+        FBInstant.shareAsync(p, null);
+    }
+
+    public void ShareMessenger()
+    {
+        var img = "data:image/png;base64,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";
+        Dictionary<string, object> p = new Dictionary<string, object>();
+        p.Add("image", img);
+        p.Add("text", "I collect " + coinTotal + " Gold");
+        p.Add("data", new Dictionary<string, object>());
+        p.Add("shareDestination", new string[] { "NEWSFEED", "GROUP", "COPY_LINK", "MESSENGER" });
+        p.Add("switchContext", false);
+
+        FBInstant.shareAsync(p, () =>
+        {
+        });
+    }
+
+    public void Invite()
+    {
+        var img = "data:image/png;base64,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";
+        Dictionary<string, object> p = new Dictionary<string, object>();
+        p.Add("image", img);
+        p.Add("text", "I collect " + coinTotal + " Gold");
+        p.Add("data", new Dictionary<string, object>());
+        p.Add("shareDestination", new string[] { "NEWSFEED", "GROUP", "COPY_LINK", "MESSENGER" });
+        p.Add("switchContext", false);
+
+        FBInstant.shareAsync(p, ()=>
+        {
+            Debug.Log("Collect Reward: " + FBInstant.getEntryPointData());
+        });
+    }
+
+    public void InvitePlaying()
+    {
+        QMG.GameContext gameContext = new QMG.GameContext();
     }
 }

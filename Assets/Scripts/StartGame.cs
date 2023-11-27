@@ -18,15 +18,18 @@ public class StartGame : MonoBehaviour
         if(player.Count == 0)
         {
             PlayerHelper.UpdatePlayer(new PlayerSaver() { playerType = Config.playerTypeDefault, lifeUpPercent = 1 });
-        }    
-
-        var curLevel = ES3.Load(StringDefine.CurrentLevel, Config.FirstLevel);
-        Debug.Log("curLevel:" + curLevel);
-
-        if (curLevel == 1)
-        {
-            SceneManager.LoadScene("InGame");
         }
-        else SceneManager.LoadScene("Menu");
+
+        //var curLevel = ES3.Load(StringDefine.CurrentLevel, Config.FirstLevel);
+        var curLevel = (Int64)1;
+        FBInstantSaveData.LoadData(() =>
+        {
+            curLevel = FBInstantSaveData.Info.Level;
+            if (curLevel == 1)
+            {
+                SceneManager.LoadScene("InGame");
+            }
+            else SceneManager.LoadScene("Menu");
+        });
     }
 }
