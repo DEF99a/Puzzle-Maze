@@ -5510,13 +5510,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f337481196c1a4ca5e8ab9dd1c5831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 60
+  totalTime: 0
   timeToGetStar: 20
   sameTimeEnemyAmount: 0
   enemyTypeAmounts: []
   totalEnemy: 10
   bounds: []
   mapType: 0
+  Hint:
+    Hints: 04000000010000000400000001000000040000000200000004000000020000000400000000000000040000000000000004000000
 --- !u!1 &1429216415106410388
 GameObject:
   m_ObjectHideFlags: 0

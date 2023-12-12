@@ -22,27 +22,26 @@ public class GameUIManager : MonoBehaviour
     [SerializeField] private RectTransform gameboy;
     [SerializeField] private RectTransform joystick;
 
-    [SerializeField] private RectTransform lifeIcon;
-    [SerializeField] private TextMeshProUGUI lifeAmountTxt;
+    //[SerializeField] private RectTransform lifeIcon;
+    //[SerializeField] private TextMeshProUGUI lifeAmountTxt;
     [SerializeField] private RectTransform timeIcon;
     [SerializeField] private TextMeshProUGUI minuteTxt;
     [SerializeField] private TextMeshProUGUI secondTxt;
-    [SerializeField] private RectTransform coinIcon;
-    [SerializeField] private TextMeshProUGUI coinTxt;
-    [SerializeField] private RectTransform x2Icon;
-    [SerializeField] private TextMeshProUGUI x2Txt;
+    //[SerializeField] private RectTransform coinIcon;
+    //[SerializeField] private TextMeshProUGUI coinTxt;
+    //[SerializeField] private RectTransform x2Icon;
+    //[SerializeField] private TextMeshProUGUI x2Txt;
 
-    [SerializeField] private TextMeshProUGUI diedMonsterTxt;
+    //[SerializeField] private TextMeshProUGUI diedMonsterTxt;
 
-    [SerializeField] private TextMeshProUGUI angryAmountTxt;
-    [SerializeField] private TextMeshProUGUI freezeAmountTxt;
-    [SerializeField] private TextMeshProUGUI invisibleAmountTxt;
+    //[SerializeField] private TextMeshProUGUI angryAmountTxt;
+    //[SerializeField] private TextMeshProUGUI freezeAmountTxt;
+    //[SerializeField] private TextMeshProUGUI invisibleAmountTxt;
     [SerializeField] private PanelPause panelPause;
     [SerializeField] private PanelWin2 panelWin;
     [SerializeField] private PanelLoose panelLoose;
 
     [SerializeField] private RectTransform levelNoticeRect;
-    [SerializeField] private Button actionBtn;
     [SerializeField] private RectTransform leftRect;
     [SerializeField] private RectTransform shootBtn;
     [SerializeField] private Image gameNotice;
@@ -80,7 +79,6 @@ public class GameUIManager : MonoBehaviour
 
         gameboy.gameObject.SetActive(false);
         joystick.gameObject.SetActive(false);
-        actionBtn.gameObject.SetActive(false);
         shootBtn.gameObject.SetActive(false);
     }
 
@@ -118,12 +116,6 @@ public class GameUIManager : MonoBehaviour
         if (playerType == PlayerType.None) playerType = PlayerHelper.GetCurrentPlayer().playerType;
 
         //var playerType = PlayerHelper.GetCurrentPlayer().playerType;
-        actionBtn.gameObject.SetActive(true);
-        var sp = EntitySprites.instance.GetSkillSprite(playerType);
-        if (sp != null) actionBtn.transform.GetChild(2).GetComponent<Image>().sprite = sp;
-
-        actionBtn.transform.GetChild(0).gameObject.SetActive(false);
-        actionBtn.transform.GetChild(3).gameObject.SetActive(false);
 
         shootBtn.gameObject.SetActive(true);
     }
@@ -228,7 +220,7 @@ public class GameUIManager : MonoBehaviour
 
     public void UpdateLife(int life)
     {
-        lifeAmountTxt.text = "x" + life.ToString();
+        //lifeAmountTxt.text = "x" + life.ToString();
     }
 
     public void UpdateTime(int second)
@@ -240,67 +232,67 @@ public class GameUIManager : MonoBehaviour
 
     public void UpdateCoin(int coin)
     {
-        coinTxt.text = coin.ToString();
+        //coinTxt.text = coin.ToString();
     }
 
     public void MoveToCoin(Transform source, Action action)
     {
-        StartCoroutine(GeneralHelper.MoveFollowTarget(source, coinIcon, action, itemSpeed));
+        //StartCoroutine(GeneralHelper.MoveFollowTarget(source, coinIcon, action, itemSpeed));
     }
 
     public void UpdateX2(int coin)
     {
-        x2Txt.text = "x" + coin.ToString();
+        //x2Txt.text = "x" + coin.ToString();
     }
 
     public void UpdateAngry(int coin)
     {
-        if (coin != 0)
-        {
-            angryAmountTxt.gameObject.SetActive(true);
-            angryAmountTxt.text = "x" + coin.ToString();
-            angryAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(false);
-        }
-        else
-        {
-            angryAmountTxt.gameObject.SetActive(false);
-            angryAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(true);
-        }
+        //if (coin != 0)
+        //{
+        //    angryAmountTxt.gameObject.SetActive(true);
+        //    angryAmountTxt.text = "x" + coin.ToString();
+        //    angryAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    angryAmountTxt.gameObject.SetActive(false);
+        //    angryAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(true);
+        //}
     }
 
     public void UpdateInvisible(int coin)
     {
-        if (coin != 0)
-        {
-            invisibleAmountTxt.gameObject.SetActive(true);
-            invisibleAmountTxt.text = "x" + coin.ToString();
-            invisibleAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(false);
-        }
-        else
-        {
-            invisibleAmountTxt.gameObject.SetActive(false);
-            invisibleAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(true);
-        }
+        //if (coin != 0)
+        //{
+        //    invisibleAmountTxt.gameObject.SetActive(true);
+        //    invisibleAmountTxt.text = "x" + coin.ToString();
+        //    invisibleAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    invisibleAmountTxt.gameObject.SetActive(false);
+        //    invisibleAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(true);
+        //}
     }
 
     public void UpdateFreeze(int coin)
     {
-        if (coin != 0)
-        {
-            freezeAmountTxt.gameObject.SetActive(true);
-            freezeAmountTxt.text = "x" + coin.ToString();
-            freezeAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(false);
-        }
-        else
-        {
-            freezeAmountTxt.gameObject.SetActive(false);
-            freezeAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(true);
-        }
+        //if (coin != 0)
+        //{
+        //    freezeAmountTxt.gameObject.SetActive(true);
+        //    freezeAmountTxt.text = "x" + coin.ToString();
+        //    freezeAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    freezeAmountTxt.gameObject.SetActive(false);
+        //    freezeAmountTxt.transform.parent.GetChild(2).gameObject.SetActive(true);
+        //}
     }
 
     public void UpdateDiedMonster(int numKilled, int total)
     {
-        diedMonsterTxt.text = string.Format("{0}/{1}", numKilled, total);
+        //diedMonsterTxt.text = string.Format("{0}/{1}", numKilled, total);
     }
     #endregion
 
@@ -313,28 +305,28 @@ public class GameUIManager : MonoBehaviour
         switch (entityType)
         {
             case EntityType.ItemLife:
-                StartCoroutine(GeneralHelper.MoveFollowTarget(source, lifeIcon, () =>
-                   {
-                       GameManager.instance.PlayerEatItem(entityType);
-                   }, itemSpeed));
+                //StartCoroutine(GeneralHelper.MoveFollowTarget(source, lifeIcon, () =>
+                //   {
+                //       GameManager.instance.PlayerEatItem(entityType);
+                //   }, itemSpeed));
                 break;
             case EntityType.ItemCoin100:
             case EntityType.ItemCoin200:
             case EntityType.ItemCoin500:
             case EntityType.ItemCoin1000:
             case EntityType.ItemCoin2000:
-                int coinAdd = 0;
-                if (entityType == EntityType.ItemCoin100) coinAdd = 10;
-                else if (entityType == EntityType.ItemCoin200) coinAdd = 20;
-                else if (entityType == EntityType.ItemCoin500) coinAdd = 50;
-                else if (entityType == EntityType.ItemCoin1000) coinAdd = 100;
-                else if (entityType == EntityType.ItemCoin2000) coinAdd = 200;
-                var go2 = ObjectPool.instance.GetGameObject(PrefabCache.instance.coinFlyUp, pos, Quaternion.identity);
-                go2.GetComponent<CoinFlyUp>().Setup(coinAdd);
-                StartCoroutine(GeneralHelper.MoveFollowTarget(source, coinIcon, () =>
-                {
-                    GameManager.instance.PlayerEatItem(entityType);
-                }, itemSpeed));
+                //int coinAdd = 0;
+                //if (entityType == EntityType.ItemCoin100) coinAdd = 10;
+                //else if (entityType == EntityType.ItemCoin200) coinAdd = 20;
+                //else if (entityType == EntityType.ItemCoin500) coinAdd = 50;
+                //else if (entityType == EntityType.ItemCoin1000) coinAdd = 100;
+                //else if (entityType == EntityType.ItemCoin2000) coinAdd = 200;
+                //var go2 = ObjectPool.instance.GetGameObject(PrefabCache.instance.coinFlyUp, pos, Quaternion.identity);
+                //go2.GetComponent<CoinFlyUp>().Setup(coinAdd);
+                //StartCoroutine(GeneralHelper.MoveFollowTarget(source, coinIcon, () =>
+                //{
+                //    GameManager.instance.PlayerEatItem(entityType);
+                //}, itemSpeed));
                 break;
             case EntityType.ItemTimer5:
             case EntityType.ItemTimer10:
@@ -346,10 +338,10 @@ public class GameUIManager : MonoBehaviour
                 break;
             case EntityType.ItemCoinRewardEndGameX2:
             case EntityType.ItemCoinRewardEndGameX3:
-                StartCoroutine(GeneralHelper.MoveFollowTarget(source, x2Icon, () =>
-                {
-                    GameManager.instance.PlayerEatItem(entityType);
-                }, itemSpeed));
+                //StartCoroutine(GeneralHelper.MoveFollowTarget(source, x2Icon, () =>
+                //{
+                //    GameManager.instance.PlayerEatItem(entityType);
+                //}, itemSpeed));
                 break;
         }
     }
@@ -416,41 +408,25 @@ public class GameUIManager : MonoBehaviour
 
     public void ClickActionButton()
     {
-        PlayerController.instance?.StartAction();
-       
-        PlayerType playerType = Config.SelectPlayerType;
-        if (playerType == PlayerType.None) playerType = PlayerHelper.GetCurrentPlayer().playerType;
-        if (playerType == PlayerType.Main2 || playerType == PlayerType.Dinosaur 
-            || playerType == PlayerType.Main1 || playerType == PlayerType.Mario2)
-        {
-        }
-        else return;
+        
+    }
 
-        var img = actionBtn.transform.GetChild(0).gameObject.GetComponent<Image>();
-        img.gameObject.SetActive(true);
-        actionBtn.transform.GetChild(3).gameObject.SetActive(true);
-        actionBtn.enabled = false;
+    [SerializeField] private Transform trfUIControl;
+    [SerializeField] private Transform trfUIAttack;
 
-        StartCoroutine(CountDown(10));
-        IEnumerator CountDown(float totalTime)
+    public bool IsShowUIControl()
+    {
+        return trfUIControl.gameObject.activeSelf;
+    }
+
+    public void OnShowUIControl(bool _on)
+    {
+        if (_on)
         {
-            float time = totalTime;
-            img.fillAmount = time  / totalTime;
-            while (true)
-            {
-                yield return new WaitForSeconds(0.1f);
-                time -= 0.1f;
-                img.fillAmount = time / totalTime;
-                if (time <= 0)
-                {
-                    break;
-                }
-            }
-            img.fillAmount = 0;
-            actionBtn.enabled = true;
-            img.gameObject.SetActive(false);
-            actionBtn.transform.GetChild(3).gameObject.SetActive(false);
+            HideAllTut();
         }
+        trfUIControl.gameObject.SetActive(_on);
+        trfUIAttack.gameObject.SetActive(_on);
     }
     #endregion
 
@@ -648,6 +624,45 @@ public class GameUIManager : MonoBehaviour
                 }
             }
             Debug.Log("Enddddd");
+        }
+    }
+
+    [SerializeField] private Animator animLeft;
+    [SerializeField] private Animator animRight;
+    [SerializeField] private Animator animUp;
+    [SerializeField] private Animator animDown;
+    [SerializeField] private Animator animAttack;
+
+    public void HideAllTut()
+    {
+        if (!IsShowUIControl()) return;
+        if (animLeft.GetCurrentAnimatorClipInfo(0)[0].clip.name == "action") animLeft.SetTrigger("Hide");
+        if (animRight.GetCurrentAnimatorClipInfo(0)[0].clip.name == "action") animRight.SetTrigger("Hide");
+        if (animUp.GetCurrentAnimatorClipInfo(0)[0].clip.name == "action") animUp.SetTrigger("Hide");
+        if (animDown.GetCurrentAnimatorClipInfo(0)[0].clip.name == "action") animDown.SetTrigger("Hide");
+        if (animAttack.GetCurrentAnimatorClipInfo(0)[0].clip.name == "action") animAttack.SetTrigger("Hide");
+    }
+
+    public void ShowTut(TypeHint Type)
+    {
+        HideAllTut();
+        switch (Type)
+        {
+            case TypeHint.Attack:
+                animAttack.SetTrigger("Trigger");
+                break;
+            case TypeHint.Down:
+                animDown.SetTrigger("Trigger");
+                break;
+            case TypeHint.Left:
+                animLeft.SetTrigger("Trigger");
+                break;
+            case TypeHint.Right:
+                animRight.SetTrigger("Trigger");
+                break;
+            case TypeHint.Up:
+                animUp.SetTrigger("Trigger");
+                break;
         }
     }
 }

@@ -156,7 +156,7 @@ var LibraryMyFBPlugin = {
 			unityInstance.SendMessage("DEF99", "Promise_on_player_setDataAsync");
         });  
   },
-  
+
   player_canSubscribeBotAsync: function(){
 	  FBInstant.player.canSubscribeBotAsync()
 	  .then(function(can_subscribe){
@@ -185,6 +185,14 @@ var LibraryMyFBPlugin = {
 	FBInstant.context.chooseAsync(param).then(function(){
 			FBInstant.logEvent("player_chooose_context", 1, FBInstant.getEntryPointData());
 			unityInstance.SendMessage("DEF99", "Promise_on_context_chooseAsync");
+	});
+  },
+
+  context_inviteAsync: function(jsonStr){
+	var param = JSON.parse(UTF8ToString(jsonStr));
+	
+	FBInstant.context.chooseAsync(param).then(function(){
+			unityInstance.SendMessage("DEF99", "Promise_on_context_inviteAsync");
 	});
   },
   
@@ -473,6 +481,28 @@ var LibraryMyFBPlugin = {
 		 message: 'YOUR_MESSAGE_HERE'
 		}, function(response){
 		console.log(response);
+	});
+  },
+
+  playerJoinTournament: function(){
+	FBInstant.getTournamentAsync().then((tournament) => {
+		console.log(tournament.getID());
+		FBInstant.tournament
+		.joinAsync(tournament.getID())
+		.then(function() {
+			console.log("Done Join");
+		});
+	});
+  },
+
+  contextCreateAsync: function(keysJsonStr){
+	keysJsonStr = UTF8ToString(keysJsonStr);
+	  
+	var keys = JSON.parse(keysJsonStr);
+	FBInstant.context
+	.createAsync(keys)
+	.then(function() {
+		console.log(FBInstant.context.getID());
 	});
   },
 };

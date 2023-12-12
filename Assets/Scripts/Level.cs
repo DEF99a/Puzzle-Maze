@@ -35,7 +35,7 @@ public class Level : MonoBehaviour
 {
     public static Level instance;
 
-    public int totalTime = 60;
+    public int totalTime = 0;
     public int timeToGetStar = 20;
 
     public int sameTimeEnemyAmount = 2;
@@ -45,7 +45,7 @@ public class Level : MonoBehaviour
     [HideInInspector] public List<Bound> bounds = new List<Bound>();
 
     [HideInInspector] public MapType mapType;
-
+    public LevelHintData Hint;
     private void Awake()
     {
         instance = this;

@@ -7,6 +7,7 @@ using System.Linq;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using UnityEngine.EventSystems;
 
 public partial class PlayerController : CharacterBase
 {
@@ -62,6 +63,7 @@ public partial class PlayerController : CharacterBase
         var localScale = transform.localScale;
         transform.localScale = new Vector3(0, 0, 1);
         transform.DOScale(localScale, 0.5f);
+        GameManager.instance.CreateRollBack();
     }
 
     protected override void HandleEvent(TrackEntry trackEntry, Spine.Event e)
@@ -106,7 +108,83 @@ public partial class PlayerController : CharacterBase
             if (angryEffects.Count() == 0)
                 subStates.Remove(DynamicEntityState.Angry);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameUIManager.instance.ClickFireButton();
+        }
+
+        if (!GameUIManager.instance.IsShowUIControl())
+        {
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    oldMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    oldMouse.z = 0;
+                }
+
+                if (Input.GetMouseButtonUp(0))
+                {
+                    Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    mouse.z = 0;
+                    Vector3 direct = (mouse - oldMouse).normalized;
+                    if (Mathf.Abs(direct.x) > Mathf.Abs(direct.y))
+                    {
+                        if (direct.x > 0)
+                        {
+                            if (CheckBox(DynamicEntityDirection.Right) && direction == DynamicEntityDirection.Right)
+                            {
+                                GameUIManager.instance.ClickFireButton();
+                            }
+                            else
+                            {
+                                MoveRight();
+                            }
+                        }
+                        else
+                        {
+                            if (CheckBox(DynamicEntityDirection.Left) && direction == DynamicEntityDirection.Left)
+                            {
+                                GameUIManager.instance.ClickFireButton();
+                            }
+                            else
+                            {
+                                MoveLeft();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (direct.y > 0)
+                        {
+                            if (CheckBox(DynamicEntityDirection.Up) && direction == DynamicEntityDirection.Up)
+                            {
+                                GameUIManager.instance.ClickFireButton();
+                            }
+                            else
+                            {
+                                MoveUp();
+                            }
+                        }
+                        else
+                        {
+                            if (CheckBox(DynamicEntityDirection.Down) && direction == DynamicEntityDirection.Down)
+                            {
+                                GameUIManager.instance.ClickFireButton();
+                            }
+                            else
+                            {
+                                MoveDown();
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
+    private Vector3 oldMouse = Vector3.zero;
 
     protected override void Move()
     {
@@ -200,13 +278,13 @@ public partial class PlayerController : CharacterBase
             MoveByButton();
             if (directionByButton == DynamicEntityDirection.None)
             {
-                if (Input.GetKey(KeyCode.W))
+                if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
                     MoveUp();
-                else if (Input.GetKey(KeyCode.D))
+                else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                     MoveRight();
-                else if (Input.GetKey(KeyCode.S))
+                else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
                     MoveDown();
-                else if (Input.GetKey(KeyCode.A))
+                else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                     MoveLeft();
                 else MoveStop();
             }
@@ -248,6 +326,13 @@ public partial class PlayerController : CharacterBase
         MyGraph.instance.GetCellPlayerCanMove(tmpPos, out bool canMove);
         if (canMove)
         {
+            RollBackData rollback = new RollBackData();
+            rollback.IsMovement = true;
+            rollback.Movement = new RollBackMovementData();
+            rollback.Movement.newDirection = direction;
+            rollback.Movement.oldPos = movePointTf.position;
+            rollback.Movement.newPos = tmpPos;
+            GameManager.instance.AddRollBack(rollback);
             oldMovePointPos = movePointTf.position;
             movePointTf.position = tmpPos;
             state = DynamicEntityState.Walk;
@@ -521,6 +606,10 @@ public partial class PlayerController : CharacterBase
     {
         var s = base.Shoot();
         AudioManager.instance.PlaySound(SoundName.player_kick);
+        if (GameManager.instance.IsShowHint)
+        {
+            GameManager.instance.EndHint(TypeHint.Attack);
+        }
         if (s)
         {
             if (TutorialController.Instance != null)
@@ -536,5 +625,18 @@ public partial class PlayerController : CharacterBase
     {
         transform.position = pos;
         movePointTf.position = pos;
+    }
+
+    public void RollBack(RollBackData data)
+    {
+        if (data.IsMovement)
+        {
+            SetPosition(data.Movement.oldPos);
+            direction = data.Movement.oldDirection;
+        }
+        else
+        {
+            data.Attack.box.RollBack(data.Attack);
+        }
     }
 }

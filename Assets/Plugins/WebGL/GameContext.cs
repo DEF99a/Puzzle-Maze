@@ -31,6 +31,12 @@ namespace QMG
         [DllImport("__Internal")]
         public static extern string context_getID();
 
+        [DllImport("__Internal")]
+        public static extern void contextCreateAsync(string keysJsonStr);
+
+        [DllImport("__Internal")]
+        public static extern void playerJoinTournament();
+
         public void chooseAsync(Dictionary<string, object> p, System.Action cb)
         {
             chooseAsync_Callback = cb;
@@ -53,7 +59,15 @@ namespace QMG
             return context_getID();
         }
 
+        public void createAsync(List<string> IDs)
+        {
+            contextCreateAsync(SimpleJson.SimpleJson.SerializeObject(IDs));
+        }
 
+        public void joinTournament()
+        {
+            playerJoinTournament();
+        }
     }
 
 }

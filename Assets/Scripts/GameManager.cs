@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum GameState
@@ -92,9 +93,10 @@ public class GameManager : MonoBehaviour
             coinFromPairs[CoinFrom.EatBalloon] = (0, 0);
             coinFromPairs[CoinFrom.KillEnemy] = (0, 0);
             coinFromPairs[CoinFrom.RemoveBox] = (0, 0);
-            GameTime = 60;
+            GameTime = 0;
             GameX2 = 1;
 
+            IsShowHint = false;
             ObjectPool.instance.DisableAll();
             MapManager.instance.LoadMap();
             MapManager.instance.GenItemsInBound();
@@ -256,11 +258,11 @@ public class GameManager : MonoBehaviour
         while (gameState != GameState.Stop)
         {
             yield return new WaitForSeconds(1f);
-            if (GameTime > 0)
+            if (GameTime >= 0)
             {
-                GameTime -= 1;
-                if(GameTime <= 10)
-                    AudioManager.instance?.PlaySound(SoundName.clock_count_ingame);
+                GameTime += 1;
+                //if(GameTime <= 10)
+                //    AudioManager.instance?.PlaySound(SoundName.clock_count_ingame);
                 GameUIManager.instance.UpdateTime(GameTime);
             }
         }
@@ -394,7 +396,7 @@ public class GameManager : MonoBehaviour
 
         if (GameTime > 0)
         {
-            int coin = GameTime * 10;
+            int coin = 1000 / GameTime;
 
             if (this.GameX2 > 0)
                 coin = this.GameX2 * coin;
@@ -430,4 +432,132 @@ public class GameManager : MonoBehaviour
     {
         gameState = GameState.Playing;
     }
+
+    public bool IsShowHint;
+    public void StartHint()
+    {
+        if (IsGameWin) return;
+        IsShowHint = true;
+        CurrentHint = 0;
+        if (rollBackSteps.Count > 0)
+        {
+            MapManager.instance.ResetMovePoints();
+            ObjectPool.instance.DisableAll();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            CreateRollBack();
+            Invoke("ShowHint", 2);
+        }
+        else
+        {
+            ShowHintPoint(Level.instance.Hint.Hints[CurrentHint]);
+        }
+    }
+
+    private void ShowHint()
+    {
+        ShowHintPoint(Level.instance.Hint.Hints[CurrentHint]);
+    }
+
+    private int CurrentHint = 0;
+    public void EndHint(TypeHint type)
+    {
+        if (type != Level.instance.Hint.Hints[CurrentHint])
+        {
+            IsShowHint = false;
+            GameUIManager.instance.HideAllTut();
+        }
+        else
+        {
+            CurrentHint++;
+            if (CurrentHint < Level.instance.Hint.Hints.Count) ShowHintPoint(Level.instance.Hint.Hints[CurrentHint]);
+            else
+            {
+                IsShowHint = false;
+                GameUIManager.instance.HideAllTut();
+            }
+        }
+    }
+
+    public bool CheckNextHintIsAttack()
+    {
+        if (CurrentHint >= Level.instance.Hint.Hints.Count) return false;
+        return Level.instance.Hint.Hints[CurrentHint] == TypeHint.Attack;
+    }
+
+    private void ShowHintPoint(TypeHint type)
+    {
+        GameUIManager.instance.ShowTut(type);
+    }
+
+    public void RollBack()
+    {
+        if (IsGameWin) return;
+        if (rollBackSteps.Count > 0)
+        {
+            PlayerController.instance.RollBack(rollBackSteps[rollBackSteps.Count - 1]);
+            rollBackSteps.RemoveAt(rollBackSteps.Count - 1);
+        }
+    }
+
+    private List<RollBackData> rollBackSteps = new List<RollBackData>();
+    public void CreateRollBack()
+    {
+        rollBackSteps.Clear();
+    }
+    public void AddRollBack(RollBackData rollBack)
+    {
+        if (rollBack.IsMovement)
+        {
+            DynamicEntityDirection direction = DynamicEntityDirection.Down;
+            for (int i = rollBackSteps.Count - 1; i >= 0; i--)
+            {
+                if (rollBackSteps[i].IsMovement)
+                {
+                    direction = rollBackSteps[i].Movement.newDirection;
+                    break;
+                }
+            }
+            rollBack.Movement.oldDirection = direction;
+        }
+        rollBackSteps.Add(rollBack);
+    }
+}
+
+[Serializable]
+public class LevelHintData
+{
+    public List<TypeHint> Hints;
+}
+
+public enum TypeHint
+{
+    Right,
+    Left,
+    Up,
+    Down,
+    Attack
+}
+
+[Serializable]
+public class RollBackData
+{
+    public bool IsMovement;
+    public RollBackMovementData Movement;
+    public RollBackAttackData Attack;
+}
+
+[Serializable]
+public class RollBackMovementData
+{
+    public Vector3 oldPos;
+    public DynamicEntityDirection oldDirection;
+    public Vector3 newPos;
+    public DynamicEntityDirection newDirection;
+}
+
+[Serializable]
+public class RollBackAttackData
+{
+    public BoxKey1 box;
+    public DynamicEntityDirection oldDirection;
 }

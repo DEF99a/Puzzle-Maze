@@ -43,23 +43,6 @@ public class MenuUIManager : MonoBehaviour
     //[SerializeField] private Button trialBtn;
     //[SerializeField] private TextMeshProUGUI priceUnlockTxt;
 
-    [Header("speed up")]
-    [SerializeField] private TextMeshProUGUI speedUpCurPercentTxt;
-    [SerializeField] private List<Image> speedUpPercentImgs;
-    [SerializeField] private Slider speedUpPercentSlider;
-    [SerializeField] private Button speedUpBtn;
-    [SerializeField] private TextMeshProUGUI speedUpPriceTxt;
-    [SerializeField] private Image speedUpMaxBtn;
-
-
-    [Header("life up")]
-    [SerializeField] private TextMeshProUGUI lifeUpCurPercentTxt;
-    [SerializeField] private List<Image> lifeUpPercentImgs;
-    [SerializeField] private Slider lifeUpPercentSlider;
-    [SerializeField] private Button lifeUpBtn;
-    [SerializeField] private TextMeshProUGUI lifeUpPriceTxt;
-    [SerializeField] private Image lifeUpMaxBtn;
-
     [SerializeField] public PanelLoadingAd panelLoadingAd;
     [SerializeField] private PanelShop panelShop;
     [SerializeField] private PanelCharacter panelCharacter;
@@ -314,63 +297,10 @@ public class MenuUIManager : MonoBehaviour
 
     private void LoadSpeedUp(int percent, bool unlocked)
     {
-        speedUpBtn.interactable = unlocked;
-
-        speedUpBtn.gameObject.SetActive(percent != 200);
-        speedUpMaxBtn.gameObject.SetActive(percent == 200);
-
-        var tmpPercent = percent;
-        if (percent >= 100) tmpPercent -= 100;
-
-        speedUpCurPercentTxt.text = string.Format("+{0}%", percent / 20 * Config.SpeedUpPercent);
-        if (percent != 200)
-            speedUpPriceTxt.text = Config.SpeedUpPrices[percent / 20].ToString();
-
-        var nextPercent = tmpPercent + 20;
-        speedUpPercentSlider.maxValue = 100;
-        speedUpPercentSlider.value = nextPercent;
-
-        var index = tmpPercent / 20;
-        for (int k = 0; k < speedUpPercentImgs.Count; k++)
-        {
-            if (k == index)
-            {
-                speedUpPercentImgs[k].gameObject.SetActive(true);
-            }
-            else
-                speedUpPercentImgs[k].gameObject.SetActive(false);
-        }
     }
 
     private void LoadLifeUp(int percent, bool unlocked)
     {
-        lifeUpBtn.interactable = unlocked;
-
-        lifeUpBtn.gameObject.SetActive(percent != 10);
-        lifeUpMaxBtn.gameObject.SetActive(percent == 10);
-
-        var tmpPercent = percent;
-        if (percent >= 5) tmpPercent -= 5;
-
-        Debug.Log("percent:" + percent);
-
-        lifeUpCurPercentTxt.text = string.Format("+{0}", percent);
-        if (percent != 10) lifeUpPriceTxt.text = Config.LifeUpPrices[percent].ToString();
-
-        var nextPercent = tmpPercent + 1;
-        lifeUpPercentSlider.maxValue = 5;
-        lifeUpPercentSlider.value = nextPercent;
-
-        var index = tmpPercent;
-        for (int k = 0; k < lifeUpPercentImgs.Count; k++)
-        {
-            if (k == index)
-            {
-                lifeUpPercentImgs[k].gameObject.SetActive(true);
-            }
-            else
-                lifeUpPercentImgs[k].gameObject.SetActive(false);
-        }
     }
 
     public void OnClickSpeedUpBtn()

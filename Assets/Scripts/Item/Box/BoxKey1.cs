@@ -31,29 +31,74 @@ public class BoxKey1 : BoxBase
         //}
         //else
         //{
-            isDie = false;
+        isDie = false;
 
-            this.itemParam = itemParam;
+        this.itemParam = itemParam;
 
-            movePointTf.parent = null;
-            movePointTf.position = transform.position;
+        movePointTf.parent = null;
+        movePointTf.position = transform.position;
 
-            direction = itemParam.direct;
-            state = DynamicEntityState.Walk;
-            currentMoveSpeed = itemParam.speed;
-
-            if (!CanKickFly && CanBreak) currentMoveSpeed = 0;
-
-            if (HasEnemyAbove) currentMoveSpeed = 0;
-            if (currentMoveSpeed == 0)
+        direction = itemParam.direct;
+        if (direction != DynamicEntityDirection.None)
+        {
+            RollBackData rollback = new RollBackData();
+            rollback.IsMovement = false;
+            rollback.Attack = new RollBackAttackData();
+            rollback.Attack.box = this;
+            switch (direction)
             {
-                moveStepCount = 0;
-                state = DynamicEntityState.Idle;
+                case DynamicEntityDirection.Down:
+                    rollback.Attack.oldDirection = DynamicEntityDirection.Up;
+                    break;
+                case DynamicEntityDirection.Up:
+                    rollback.Attack.oldDirection = DynamicEntityDirection.Down;
+                    break;
+                case DynamicEntityDirection.Right:
+                    rollback.Attack.oldDirection = DynamicEntityDirection.Left;
+                    break;
+                case DynamicEntityDirection.Left:
+                    rollback.Attack.oldDirection = DynamicEntityDirection.Right;
+                    break;
             }
-            diedEnemyAmount = 0;
+            GameManager.instance.AddRollBack(rollback);
+        }
+        state = DynamicEntityState.Walk;
+        currentMoveSpeed = itemParam.speed;
+
+        if (!CanKickFly && CanBreak) currentMoveSpeed = 0;
+
+        if (HasEnemyAbove) currentMoveSpeed = 0;
+        if (currentMoveSpeed == 0)
+        {
+            moveStepCount = 0;
+            state = DynamicEntityState.Idle;
+        }
+        diedEnemyAmount = 0;
 
         //}
         //currentCell = MyGraph.instance.GetCellFromPosition(transform.position, out _);
+    }
+
+    public void RollBack(RollBackAttackData rollback)
+    {
+        isDie = false;
+
+        movePointTf.parent = null;
+        movePointTf.position = transform.position;
+
+        direction = rollback.oldDirection;
+        state = DynamicEntityState.Walk;
+        currentMoveSpeed = 10f;
+
+        if (!CanKickFly && CanBreak) currentMoveSpeed = 0;
+
+        if (HasEnemyAbove) currentMoveSpeed = 0;
+        if (currentMoveSpeed == 0)
+        {
+            moveStepCount = 0;
+            state = DynamicEntityState.Idle;
+        }
+        diedEnemyAmount = 0;
     }
 
     protected override void Move()
@@ -92,6 +137,7 @@ public class BoxKey1 : BoxBase
 
         if (location.tileType == TileType.CanMove)
         {
+            
             movePointTf.position = tmpPos;
             moveStepCount++;
         }

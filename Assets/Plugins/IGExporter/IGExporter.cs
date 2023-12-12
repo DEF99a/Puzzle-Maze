@@ -55,6 +55,11 @@ namespace QMG
             }
         }
 
+        private void Promise_on_context_inviteAsync()
+        {
+
+        }
+
         private void Promise_on_context_getPlayersAsync(string jsonStr)
         {
             if (GameContext.getPlayersAsync_Callback != null)

@@ -12,6 +12,7 @@ using UnityEngine.Video;
 
 public class StartGame : MonoBehaviour
 {
+    [SerializeField] private bool IsEditor;
     void Start()
     {
         var player = PlayerHelper.GetPlayers();
@@ -20,16 +21,27 @@ public class StartGame : MonoBehaviour
             PlayerHelper.UpdatePlayer(new PlayerSaver() { playerType = Config.playerTypeDefault, lifeUpPercent = 1 });
         }
 
-        //var curLevel = ES3.Load(StringDefine.CurrentLevel, Config.FirstLevel);
-        var curLevel = (Int64)1;
-        FBInstantSaveData.LoadData(() =>
+        if (IsEditor)
         {
-            curLevel = FBInstantSaveData.Info.Level;
+            var curLevel = ES3.Load(StringDefine.CurrentLevel, Config.FirstLevel);
             if (curLevel == 1)
             {
                 SceneManager.LoadScene("InGame");
             }
             else SceneManager.LoadScene("Menu");
-        });
+        }
+        else
+        {
+            var curLevel = (Int64)1;
+            FBInstantSaveData.LoadData(() =>
+            {
+                curLevel = FBInstantSaveData.Info.Level;
+                if (curLevel == 1)
+                {
+                    SceneManager.LoadScene("InGame");
+                }
+                else SceneManager.LoadScene("Menu");
+            });
+        }
     }
 }

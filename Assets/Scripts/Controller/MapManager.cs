@@ -292,6 +292,12 @@ fakeLevel = 0;
         CalCameraBound();
         CalCurMapBound(playerPosition);
         EffectController.instance.GenEffectReborn(playerPosition);
+        if (CurLevelNumber == 1) Invoke("ShowHint", 2f); 
+    }
+
+    private void ShowHint()
+    {
+        GameManager.instance.StartHint();
     }
 
     private void CalCameraBound()

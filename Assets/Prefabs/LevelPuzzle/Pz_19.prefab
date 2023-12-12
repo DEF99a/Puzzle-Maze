@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8202439350916055900}
   m_RootOrder: 4
@@ -56,6 +57,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8418401681252033436}
   m_Father: {fileID: 4091884965771280387}
@@ -89,6 +91,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4091884965771280387}
   m_RootOrder: 5
@@ -242,6 +245,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -307,6 +311,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4091884965771280387}
   m_RootOrder: 1
@@ -388,6 +393,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -451,6 +457,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.47, y: 5.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8418401681252033436}
   m_RootOrder: 1
@@ -483,6 +490,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8202439350916055900}
   m_RootOrder: 1
@@ -636,6 +644,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -702,6 +711,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4091884966204896775}
   - {fileID: 8133715475926271269}
@@ -751,7 +761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f337481196c1a4ca5e8ab9dd1c5831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 60
+  totalTime: 0
   timeToGetStar: 20
   sameTimeEnemyAmount: 0
   enemyTypeAmounts: []
@@ -787,6 +797,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4091884965771280387}
   m_RootOrder: 4
@@ -1740,19 +1751,23 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 4
-    m_Data: {fileID: -6603855711130050178, guid: c0738066f405c2e49a59eed8510b5bcf, type: 3}
+    m_Data: {fileID: -6603855711130050178, guid: c0738066f405c2e49a59eed8510b5bcf,
+      type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: f256872d07dce884daf2ef3cd3df4302, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -2700926571218424733, guid: 7875087f1ce747a438d4279005824b92, type: 3}
+    m_Data: {fileID: -2700926571218424733, guid: 7875087f1ce747a438d4279005824b92,
+      type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 1b3e75dd3cc8fb440a1f9c010d655206, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 855559758150216931, guid: 765f5de8d75e75141a702a80b5e5c160, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 9184652715732615935, guid: 7875087f1ce747a438d4279005824b92, type: 3}
+    m_Data: {fileID: 9184652715732615935, guid: 7875087f1ce747a438d4279005824b92,
+      type: 3}
   - m_RefCount: 68
-    m_Data: {fileID: 1348447379536910982, guid: d52098c483764ff4c80cff4aabe92b38, type: 3}
+    m_Data: {fileID: 1348447379536910982, guid: d52098c483764ff4c80cff4aabe92b38,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 77
     m_Data:
@@ -1810,6 +1825,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1891,6 +1907,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4091884965771280387}
   m_RootOrder: 0
@@ -5858,11 +5875,14 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 18
-    m_Data: {fileID: -6796347993268767865, guid: db2200eaa16a3fe4a8988a6e1587927e, type: 3}
+    m_Data: {fileID: -6796347993268767865, guid: db2200eaa16a3fe4a8988a6e1587927e,
+      type: 3}
   - m_RefCount: 18
-    m_Data: {fileID: -4717025515720734096, guid: db2200eaa16a3fe4a8988a6e1587927e, type: 3}
+    m_Data: {fileID: -4717025515720734096, guid: db2200eaa16a3fe4a8988a6e1587927e,
+      type: 3}
   - m_RefCount: 356
-    m_Data: {fileID: -1175742388208687764, guid: d52098c483764ff4c80cff4aabe92b38, type: 3}
+    m_Data: {fileID: -1175742388208687764, guid: d52098c483764ff4c80cff4aabe92b38,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 392
     m_Data:
@@ -5920,6 +5940,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -5983,6 +6004,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5558774373082843391}
   - {fileID: 4637385648778651322}
@@ -6015,6 +6037,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8202439350916055900}
   m_RootOrder: 5
@@ -6047,6 +6070,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8202439350916055900}
   m_RootOrder: 0
@@ -6208,6 +6232,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -6273,6 +6298,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1159939168982671629}
   - {fileID: 8783028617522815310}
@@ -6299,9 +6325,12 @@ MonoBehaviour:
   _loadTileWater: {fileID: 4091884965795566417}
   _loadTileGroundBasic_1: {fileID: 0}
   _loadTileGroundBasic_2: {fileID: 4091884965795566417}
-  _prefabWater: {fileID: 7240846758043446661, guid: b3b06f8ee8e310f4e872d81bd7448c85, type: 3}
-  _prefabGroundBasic1: {fileID: 2727381280299945963, guid: e02d0e7db3ae6ed49a93c952273e1c49, type: 3}
-  _prefabGroundBasic2: {fileID: 7240846758043446661, guid: 137aaa4417353774c8317e12fd900d67, type: 3}
+  _prefabWater: {fileID: 7240846758043446661, guid: b3b06f8ee8e310f4e872d81bd7448c85,
+    type: 3}
+  _prefabGroundBasic1: {fileID: 2727381280299945963, guid: e02d0e7db3ae6ed49a93c952273e1c49,
+    type: 3}
+  _prefabGroundBasic2: {fileID: 7240846758043446661, guid: 137aaa4417353774c8317e12fd900d67,
+    type: 3}
   _frontWaterTilemap: {fileID: 8002028205962938670}
   _frontGroundBasic1: {fileID: 1398090293362600283}
   _frontGroundBasic2: {fileID: 8595854820555310706}
@@ -6470,6 +6499,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4091884965771280387}
   m_RootOrder: 3
@@ -6763,6 +6793,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -6842,6 +6873,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8202439350916055900}
   m_RootOrder: 3
@@ -6874,6 +6906,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4091884965771280387}
   m_RootOrder: 2
@@ -7043,13 +7076,17 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 9
-    m_Data: {fileID: 4604696045778548791, guid: d52098c483764ff4c80cff4aabe92b38, type: 3}
+    m_Data: {fileID: 4604696045778548791, guid: d52098c483764ff4c80cff4aabe92b38,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 6266817442383914697, guid: 7875087f1ce747a438d4279005824b92, type: 3}
+    m_Data: {fileID: 6266817442383914697, guid: 7875087f1ce747a438d4279005824b92,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7932466585136747830, guid: 7875087f1ce747a438d4279005824b92, type: 3}
+    m_Data: {fileID: -7932466585136747830, guid: 7875087f1ce747a438d4279005824b92,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7052988091780434142, guid: 7875087f1ce747a438d4279005824b92, type: 3}
+    m_Data: {fileID: -7052988091780434142, guid: 7875087f1ce747a438d4279005824b92,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 12
     m_Data:
@@ -7107,6 +7144,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -7170,6 +7208,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.79, y: -3.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8418401681252033436}
   m_RootOrder: 0
@@ -7202,6 +7241,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8202439350916055900}
   m_RootOrder: 2
@@ -7355,6 +7395,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0

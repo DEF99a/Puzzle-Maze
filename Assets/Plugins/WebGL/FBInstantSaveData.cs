@@ -20,7 +20,7 @@ public static class FBInstantSaveData
             if (Info.ID == 0) Info.ID = Int64.Parse(context.getID());
             if (data.ContainsKey("Info_LevelGame"))
             {
-                Debug.Log("Info_LevelGame " + (int)data["Info_LevelGame"]);
+                Debug.Log("Info_LevelGame " + (Int64)data["Info_LevelGame"]);
                 Info.Level = (Int64)data["Info_LevelGame"];
             }
             if (data.ContainsKey("Info_CoinGame")) Info.Coin = (Int64)data["Info_CoinGame"];

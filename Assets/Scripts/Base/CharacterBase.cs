@@ -247,6 +247,10 @@ public class CharacterBase : EntityBase
     {
         direction = DynamicEntityDirection.Left;
         var tmpPos = movePointTf.position + Vector3.left;
+        if (GameManager.instance.IsShowHint && !GameManager.instance.CheckNextHintIsAttack())
+        {
+            GameManager.instance.EndHint(TypeHint.Left);
+        }
         CanMove(tmpPos);
         //Debug.Log("canMove:" + canMove);
     }
@@ -255,6 +259,10 @@ public class CharacterBase : EntityBase
     {
         direction = DynamicEntityDirection.Down;
         var tmpPos = movePointTf.position + Vector3.down;
+        if (GameManager.instance.IsShowHint && !GameManager.instance.CheckNextHintIsAttack())
+        {
+            GameManager.instance.EndHint(TypeHint.Down);
+        }
         CanMove(tmpPos);
         //Debug.Log("canMove:" + canMove);
     }
@@ -263,6 +271,10 @@ public class CharacterBase : EntityBase
     {
         direction = DynamicEntityDirection.Right;
         var tmpPos = movePointTf.position + Vector3.right;
+        if (GameManager.instance.IsShowHint && !GameManager.instance.CheckNextHintIsAttack())
+        {
+            GameManager.instance.EndHint(TypeHint.Right);
+        }
         CanMove(tmpPos);
         //Debug.Log("canMove:" + canMove);
     }
@@ -271,6 +283,10 @@ public class CharacterBase : EntityBase
     {
         direction = DynamicEntityDirection.Up;
         var tmpPos = movePointTf.position + Vector3.up;
+        if (GameManager.instance.IsShowHint && !GameManager.instance.CheckNextHintIsAttack())
+        {
+            GameManager.instance.EndHint(TypeHint.Up);
+        }
         CanMove(tmpPos);
         //Debug.Log("canMove:" + canMove);
     }
@@ -300,6 +316,21 @@ public class CharacterBase : EntityBase
         //    state = DynamicEntityState.Shoot;
         //    skeletonAnimation.loop = false;
         //}
+        return false;
+    }
+
+    public bool CheckBox(DynamicEntityDirection direction)
+    {
+        if (isDie || state == DynamicEntityState.Ice) return false;
+
+        var location = MyGraph.instance.GetLocationFromPos(transform.position + directPos[direction]);
+        if (location.tileType == TileType.Dynamic)
+        {
+            if (location.entityBase is BoxBase box && box.CanShoot())
+            {
+                return true;
+            }
+        }
         return false;
     }
 
